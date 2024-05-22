@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colegio Diocesano Conceito</title>
+    <link rel="shortcut icon" href="../src/images/favicon.png" type="image/png">
+
+    <!-- EXTERNOS -->
+    <link rel="stylesheet" href="../src/libs/bootstrap/css/bootstrap.min.css">
+    <link href="../src/libs/aos-master/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../src/libs/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../src/libs/fontawesome-free-6.4.2-web/css/all.min.css">
+    <script src="../src/libs/aos-master/dist/aos.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../src/css/reset.css">
+    <link rel="stylesheet" href="../src/css/styles.css">
+    <link rel="stylesheet" href="../src/css/responsive.css">
+
+    <!-- JAVASCRIPT-->
+    <script src="../src/js/scripts.js" defer></script>
+</head>
+
+<body>
+    <header class="container-fluid header">
+        <div class="row justify-content-space-between align-items-center">
+            <a href="../index.html" class="logo col-3">
+                <h1 class="img-logo"></h1>
+            </a>
+
+            <nav class="nav-bar col-8">
+                <ul class="desktop-menu" id="menu">
+                    <li class="item-menu">
+                        <a href="../index.html" class="nav-link">Inicio</a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="./eixoglobal.html" class="nav-link">Eixo global</a>
+                    </li>
+
+                    <li class="item-menu" id="item-menu-cursos">
+                        <a href="../index.html#secao-cursos" class="nav-link" id="current-page">Cursos</a>
+                        <ul class="aba-cursos">
+                            <li><a href="./infantil.html">Educação Infantil</a></li>
+                            <li><a href="./fundamental.html">Ensino Fundamental</a></li>
+                            <li><a href="./medio.html">Ensino Médio</a></li>
+                            <li><a href="./extracurriculares.html">Atividades Extracurriculares</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="item-menu">
+                        <a href="galeria.html" class="nav-link">Galeria</a>
+                    </li>
+
+                    <li class="item-menu">
+                        <a href="#footer_contacts" class="nav-link">Contato</a>
+                    </li>
+                </ul>
+
+                <div class="mobile-menu-icon">
+                    <button onClick="menuShow()"><img src="../src/images/menu-mobile/button_mobile.svg" alt="" class="icone-menu-mobile"></button>
+                </div>
+            </nav>
+
+            <nav class="mobile-menu">
+                <ul class="menu">
+                    <li class="item-menu"><a href="../index.html" class="nav-link" onClick="menuShow()">Inicio</a></li>
+                    <li class="item-menu"><a href="./eixoglobal.html" class="nav-link" onClick="menuShow()">Eixo global</a></li>
+                    <li class="item-menu"><a href="#secao-cursos" class="nav-link" onClick="menuShow()" id="current-page">Cursos</a></li>
+                    <li class="item-menu"><a href="galeria.html" onClick="menuShow()" class="nav-link">Galeria</a></li>
+                    <li class="item-menu"><a href="#footer_contacts" onClick="menuShow()" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <button class="btn-flutuante" id="btn-flutuante-maps">
+            <a href="https://www.google.com/maps/place/Diocesan+College+of+Crato/@-7.235144,-39.410814,15z/data=!4m6!3m5!1s0x7a18484451aea13:0xb28923c9ecc5939d!8m2!3d-7.2351437!4d-39.4108141!16s%2Fg%2F1tfq4v_7?hl=pt-BR&entry=ttu" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
+        </button>
+        <button class="btn-flutuante" id="btn-flutuante-wpp">
+            <a href="https://api.whatsapp.com/send?phone=5588997137570&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es%21+%F0%9F%98%8A" target="_blank"><i class="bi bi-whatsapp"></i></a>
+        </button>
+
+        <section class="secao-inicial container-fluid" id="extracurricular">
+            <div class="overlay"></div>
+            <div class="d-flex justify-content-center">
+                <div class="titulo-cursos">
+                    <h1>Atividades Extracurriculares</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao-conteudo container">
+            <div class="article">
+                <h2 class="subtitulo-article">Explorando Além das Salas de Aula: As Atividades Extracurriculares do Diocesano Conceito</h2>
+                <p class="text-article">
+                    No coração da comunidade educacional, o Diocesano Conceito se destaca não apenas por seu compromisso com o ensino acadêmico de excelência, mas também por suas diversas oportunidades de desenvolvimento pessoal e social por meio de suas atividades extracurriculares. Essas atividades desempenham um papel fundamental na formação de nossos alunos, proporcionando uma experiência educacional holística que vai além das quatro paredes da sala de aula.
+                </p>
+
+                <p class="text-article">
+                    O Diocesano Conceito acredita que a educação não deve se limitar ao currículo acadêmico, mas deve abranger uma ampla gama de experiências que ajudam os alunos a desenvolver habilidades interpessoais, paixões pessoais e talentos individuais. Para isso, oferecemos uma ampla variedade de atividades extracurriculares, que atendem aos interesses e necessidades de nossos alunos.
+                </p>
+            </div>
+            
+            <div class="article"  data-aos="fade-up">
+                <h2 class="subtitulo-article">Atividades oferecidas</h2>
+
+                <p class="text-article">
+                    <strong>Esportes:</strong> Nossas equipes esportivas são uma fonte de orgulho, proporcionando oportunidades para os alunos se envolverem em competições e aprenderem sobre trabalho em equipe, liderança e disciplina.
+                </p>
+
+                <p class="text-article">
+                    <strong>Artes Cênicas:</strong> O teatro e a música desempenham um papel importante em nossa escola. Os alunos podem participar de produções teatrais, grupos de música e coral, permitindo que expressem sua criatividade e desenvolvam suas habilidades artísticas.
+                </p>
+
+                <p class="text-article">
+                    <strong>Clubes Acadêmicos:</strong> Temos uma série de clubes acadêmicos que incentivam a exploração intelectual, desde clubes de debate até clubes de matemática e ciência. Essas atividades ajudam os alunos a aprofundar seu conhecimento em áreas de interesse específicas.
+                </p>
+
+                <p class="text-article">
+                    <strong>Serviços Comunitário:</strong> Valorizamos o espírito de cidadania e serviço comunitário. Nossos alunos têm a oportunidade de se envolver em projetos que fazem a diferença em suas comunidades locais.
+                </p>
+
+                <p class="text-article">
+                    <strong>Artes Plásticas e Criativas:</strong> Oferecemos aulas de arte que permitem aos alunos explorar sua criatividade por meio de pintura, escultura, fotografia e muito mais.
+                </p>
+
+                <p class="text-article">
+                    Todas essas atividades extracurriculares são projetadas para ajudar os alunos a desenvolver habilidades essenciais, como trabalho em equipe, liderança, comunicação e resolução de problemas. Elas também desempenham um papel fundamental na construção de relacionamentos e no fortalecimento do senso de comunidade em nossa escola.
+                </p>
+
+                <p class="text-article">
+                    No Diocesano Conceito, acreditamos que a educação não se limita aos livros didáticos, mas é uma jornada de descoberta, crescimento e realização pessoal. Nossas atividades extracurriculares são uma parte vital dessa jornada, capacitando nossos alunos a se tornarem cidadãos bem preparados, confiantes e prontos para enfrentar os desafios do mundo.
+                </p>
+
+                
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <div id="footer_content">
+            <div id="footer-logo">
+                <img src="../src/images/menu-mobile/logo-branca-mobile.png" alt="">
+                <a href="#extracurricular"><button class="btn"><i class="bi bi-arrow-up-circle-fill btn-voltar"></i></button></a>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h2>Menu</h2>
+                </li>
+                <li>
+                    <a href="../index.html" class="footer-link">Inicio</a>
+                </li>
+                <li>
+                    <a href="./eixoglobal.html" class="footer-link">Eixo global</a>
+                </li>
+                <li>
+                    <a href="../index.html#secao-cursos" class="footer-link">Cursos</a>
+                </li>
+                <li>
+                    <a href="galeria.html" class="footer-link">Galeria</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h2>Contato</h2>
+                </li>
+                <li> 
+                    <a href="mailto:direcaogeral@diocesanoconceito.com" target="_blank" class="footer-link"><i class="bi bi-envelope-at-fill icone-email"></i>direcaogeral@diocesanoconceito.com</a>
+                </li>
+                <li> 
+                    <a href="mailto:colegiodiocesano.secretaria@gmail.com" target="_blank" class="footer-link"><i class="bi bi-envelope-at-fill icone-email"></i>colegiodiocesano.secretaria@gmail.com</a>
+                </li>
+                <li>
+                    <a href="https://api.whatsapp.com/send?phone=5588997137570&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es%21+%F0%9F%98%8A" target="_blank" class="footer-link" ><i class="bi bi-telephone-fill icone-faleconosco"></i> Fale conosco</a>
+                </li>
+            </ul>
+
+            <div id="footer_contacts">
+                <div id="footer_social_media">
+                    <a href="https://www.instagram.com/diocesanodocratoconceito/" class="footer-link" target="_blank" id="instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/channel/UCkdwV68PetF2mRnHeDsrVMw" class="footer-link" target="_blank" id="youtube">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+
+                    <a href="https://www.tiktok.com/@colegiodiocesano1" class="footer-link" target="_blank" id="tiktok">
+                        <i class="bi bi-tiktok"></i>
+                    </a>
+                    
+                    <a href="https://twitter.com/DiocesanoConc_" class="footer-link" target="_blank" id="twitter">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/company/col%C3%A9gio-diocesano-conceito/" class="footer-link" target="_blank" id="linkedin">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                </div>
+
+                <div id="slogan">
+                    <p>A educação humanizada <br> transforma.</p>
+                </div>
+            </div>
+        </div> 
+        <div id="footer_copyright">
+            &#169
+            2023 Todos os direitos reservados
+        </div>
+    </footer>
+
+    <script> AOS.init({duration: 700}); </script>
+</body>
+</html>

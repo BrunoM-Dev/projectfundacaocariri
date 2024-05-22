@@ -1,0 +1,893 @@
+html{
+    font-size: 62.5%;
+}
+
+:root {
+    --verde-escuro: #006414;
+    --verde-intermediario: #009929;
+    --verde-claro: #5ccb5f;
+
+    --laranja-escuro: #f58634;
+    --laranja-intermediario: #f9a132;
+    --laranja-claro: #f2b448;
+    
+    --branco-font: #fff;
+
+    --color-neutral-0: #0e0c0c;
+    --color-neutral-10: #171717;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #f5f5f5;
+}
+
+.mobile-menu-icon {
+    display: none;
+}
+
+.mobile-menu {
+    transition: 0.5s;
+    transform: translateX(100%);
+}
+
+.oculto{
+    opacity: 0;
+}
+
+@media (max-width: 1200px) {
+
+    .pg-eixo {
+        font-size: 1.7rem !important;
+        width: 90% !important;
+    }
+
+    .maps-endereco .localizacao .localizacao-content .titulo-maps{
+        font-size: 5rem;
+        margin-bottom: 20px;
+        border-right: 2px solid rgba(255, 255, 255, 0.75);
+        white-space: nowrap;
+
+        overflow: hidden;
+    }
+    
+    span.titulo-laranja {
+        font-size: 5rem;
+        color: var(--laranja-claro);
+    }
+
+    .maps-endereco .localizacao .localizacao-content .text-endereco {
+        width: 90%;;
+        font-size:2rem;
+        z-index: 2;
+        text-align: justify;
+    }
+
+    .texto-verde {
+        font-size:2rem !important ;   }
+
+    .informacoes-text .box-paragrafo p{
+        font-size: 2rem ;
+    }
+}
+
+
+@media (max-width: 1024px) {
+    .maps-endereco .localizacao .localizacao-content .titulo-maps{
+        font-size: 4.5rem;
+        margin-bottom: 20px;
+        border-right: 2px solid rgba(255, 255, 255, 0.75);
+        white-space: nowrap;
+
+        overflow: hidden;
+    }
+    
+    span.titulo-laranja {
+        font-size: 4.5rem;
+        color: var(--laranja-claro);
+    }
+
+    .maps-endereco .localizacao .localizacao-content .text-endereco {
+        width: 90%;;
+        font-size:1.8rem;
+        z-index: 2;
+        text-align: justify;
+    }
+
+    .texto-verde {
+        font-size:1.8rem !important;
+    }
+
+    .maps-endereco .icone-localizacao img {
+        height: 130px;
+    }
+}
+
+@media (max-width: 992px) {
+
+    nav .desktop-menu {
+        display: flex;
+        justify-content:center;
+        width: 100%;
+    }
+
+    .box-cards{
+        justify-content: center;
+    }
+
+    .card-item{
+        width: fit-content;
+        margin-bottom: 70px;
+    }
+
+    @keyframes autoplay-loop-animation {
+        0% {
+            transform: translate3d(0px, 0px, 0px);
+        }
+        10% {
+            transform: translate3d(0px, 0px, 0px);
+        }
+        20% {   
+            transform: translate3d(-340px, 0px, 0px);
+        }
+        30% {   
+            transform: translate3d(-680px, 0px, 0px);
+        }
+        40% {
+            transform: translate3d(-1020px, 0px, 0px);
+        }
+        50% {   
+            transform: translate3d(-1360px, 0px, 0px);
+        }
+        60% {   
+            transform: translate3d(-1700px, 0px, 0px);
+        }
+        70% {   
+            transform: translate3d(-2040px, 0px, 0px);
+        }
+        80% {   
+            transform: translate3d(-2300px, 0px, 0px);
+        }
+        90% {   
+            transform: translate3d(-2300px, 0px, 0px);
+        }
+        100% {   
+            transform: translate3d(0px, 0px, 0px);
+        }
+    }
+
+
+    .informacoes-icone .logo-sobre{
+        width: 280px;
+        height: 178px;
+    }
+
+    .informacoes-text .box-paragrafo p{
+        font-size: 1.8rem; 
+     }
+
+     .pg-eixo {
+        font-size: 1.5rem !important;
+        width: 90% !important;
+    }
+
+    .maps-endereco .localizacao .localizacao-content{
+        widows: 80%;
+    }
+
+    .maps-endereco .localizacao .localizacao-content .titulo-maps{
+        font-size: 4rem;
+        margin-bottom: 20px;
+        border-right: 2px solid rgba(255, 255, 255, 0.75);
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    
+    span.titulo-laranja {
+        font-size: 4rem;
+        color: var(--laranja-claro);
+    }
+}
+
+@media (max-width: 850px) {
+    
+    section#secao-news{
+        margin:10px 0 40px;
+    }
+    
+    nav .desktop-menu {
+        display: none;
+    }
+
+    .mobile-menu{
+        background-color: var(--verde-intermediario);
+        
+    }
+
+    .mobile-menu-icon{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        padding: 0 5%;
+    }
+
+    .mobile-menu-icon button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+
+    .mobile-menu ul.menu {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 1rem;
+        padding-left: 0;
+    }
+
+    .mobile-menu .item-menu {
+        display: flex;
+        justify-content: center;
+        font-size: 1.5rem;
+        padding-top: 2rem;
+    }
+
+    .open {
+        transform: translateY(0px);
+    }
+
+    main .btn-flutuante {
+        position: fixed;
+        display: inline;
+        z-index: 99;
+        width: 50px;
+        height: 50px;
+        border: none;
+        border-radius: 50%;
+        font-size: 28px;
+        transition: all 0.5s;
+    }
+
+    main #btn-flutuante-maps {
+        right: 25px;
+        bottom: 85px;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #d82626;
+        color: #fff;
+    }
+    
+    main #btn-flutuante-wpp {
+        right: 25px;
+        bottom: 20px;
+        color: 	#fff;
+        background-color: #25D366;
+    }
+
+    main #btn-flutuante-wpp a {color: #fff;}
+    main #btn-flutuante-maps a {color: #fff;}
+
+    main #btn-flutuante-maps:hover {
+        transform: scale(1.20);    
+    }
+    
+    main #btn-flutuante-wpp:hover {
+        transform: scale(1.20);
+    }
+     
+    .informacoes-icone{ border-radius: 12px;}
+    .informacoes-text{ border-radius: 12px;}
+
+    .informacoes-icone .logo-sobre{
+        width: 310px;
+        height: 197px;
+    }
+
+/*     .slide-container .card .overlay-news-content p {font-size: 1.4rem; } */
+
+    .maps-endereco .localizacao {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        color: var(--branco-font);
+        z-index: 2;
+    }
+
+    .maps-endereco .localizacao .localizacao-content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        padding: 15px;
+    }
+
+    .maps-endereco .localizacao .localizacao-content .titulo-maps{
+        font-size:3.8rem;
+        margin-bottom: 20px;
+        border-right: 2px solid rgba(255, 255, 255, 0.75);
+        white-space: nowrap;
+        overflow: hidden;
+    }
+    span.titulo-laranja {
+        font-size: 3.8rem;
+        color: var(--laranja-claro);
+    }
+    .maps-endereco .localizacao .localizacao-content .text-endereco {
+        width: 90%;;
+        font-size:2rem;
+        z-index: 2;
+        text-align: justify;
+    }
+
+    .texto-verde {
+        font-size:2rem !important;    }
+
+    .maps-endereco .icone-localizacao{
+        width: 50%;
+        border-radius: 10px;
+        z-index: 2;
+        transform: translateY(0px); 
+        animation: floating 4s ease-in-out infinite;
+    }
+
+    .maps-endereco .icone-localizacao img {
+        height: 100px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .slide-container .card .overlay-news-content p {font-size: 1.8rem;}
+    .slide-container .card .overlay-news-content h2 {font-size: 3rem; padding: 30px 20px 20px;}
+
+    .informacoes:first-of-type {
+        padding-bottom: 0;
+    
+    }
+
+    .slide-galeria {
+        display: none;
+    }
+
+    #eixo {
+        background-image: url("../images/artigos-cursos/eixo.jpg");
+        background-position: 50% 0% !important;
+    }
+
+    .pg-eixo {
+        font-size: 1.8rem !important;
+        width: 90% !important;
+    }
+
+    .curso-card {
+        width: 100%;
+    }
+}
+
+@media (max-width: 700px) {
+
+    .header {
+        padding: 20px 0px;;
+    }
+
+    header .logo .img-logo {
+        width: 90px;
+        height: 57px;
+        background-image: url("../images/menu-mobile/logo-branca-mobile.png");
+        background-size: cover;
+        background-position: center;
+    }
+    
+
+
+    .informacoes-icone .logo-sobre{
+        width: 330px;
+        height: 210px;
+    }
+
+    .informacoes-text .box-paragrafo p{
+        font-size: 2rem; 
+    }
+
+    .maps-endereco .localizacao {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        color: var(--branco-font);
+        z-index: 2;
+    }
+
+    .maps-endereco .localizacao .localizacao-content{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        padding: 15px;
+    }
+
+    .maps-endereco .localizacao .localizacao-content .titulo-maps{
+        font-size:3rem;
+        margin-bottom: 20px;
+        border-right: 2px solid rgba(255, 255, 255, 0.75);
+        white-space: nowrap;
+        overflow: hidden;
+    }
+
+    span.titulo-laranja {
+        font-size: 3rem;
+        color: var(--laranja-claro);
+    }
+
+    .maps-endereco .localizacao .localizacao-content .text-endereco {
+        width: 90%;;
+        font-size:1.6rem;
+        z-index: 2;
+        text-align: justify;
+    }
+
+    .texto-verde {
+        font-size:1.6rem !important;
+    }
+
+    .maps-endereco .icone-localizacao{
+        border-radius: 10px;
+        z-index: 2;
+        transform: translateY(0px); 
+        animation: floating 4s ease-in-out infinite;
+    }
+
+    .maps-endereco .icone-localizacao img {
+        height: 100px;
+    }
+
+    main .secao-conteudo , main .secao-video {
+        width: 80vw !important;
+    }
+
+    main .secao-video iframe {
+        height: 40vw;
+    }
+
+}
+
+/* @media screen and (min-width:580px) and (max-width: 650px) {
+    .slide-container .card .overlay-news-content h2 {font-size: 2.5rem;}
+    .slide-container .card .overlay-news-content p {
+        display: -webkit-box;
+        -webkit-line-clamp: 7;
+        -webkit-box-orient: vertical;
+    }
+} */
+
+@media (max-width: 600px) {
+
+    #eixo {
+        background-image: url("../images/artigos-cursos/eixo-mobile.jpg");
+        background-position: 50% 0% !important;
+    }
+
+    .informacoes-icone .logo-sobre{
+        width: 300px;
+        height: 191px;
+    }
+    .informacoes {
+        display: flex;
+        align-items:center ;
+        height: 80%;
+        padding-bottom: 80px;
+        max-width: 90vw;
+    }
+    .informacoes-text .box-paragrafo p{
+        font-size: 2rem; 
+    }
+    .informacoes-icone {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--branco-font);
+        height: 300px;
+    }
+     .informacoes-icone .logo{
+        display: inline-flex;
+        transform: scale(0.90);
+    }
+     .logo img{
+        width: 300px;
+     }
+
+     .pg-eixo {
+        font-size: 1.6rem !important;
+        width: 90% !important;
+    }
+
+    .informacoes:first-of-type {
+        padding-top: 0;
+    }
+
+    .informacoes-icone:last-of-type {
+        margin: 50px 0
+    }
+
+    .informacoes .logo-eixoglobal img {     
+        height: 290px;
+    }
+
+/*     .slide-container .card .overlay-news-content h2 {font-size: 2.5rem;}
+    .slide-container .card .overlay-news-content p {
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+    }
+ */
+
+    .maps-endereco .localizacao {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+        color: var(--branco-font);
+        z-index: 2;
+    }
+    .maps-endereco .localizacao .localizacao-content{
+        order: 2;
+        display: flex;
+        justify-content: center;
+    }
+    .maps-endereco .localizacao .localizacao-content .titulo-maps{
+        font-size: 3.3rem;
+        margin-bottom: 20px;
+        border-right: 2px solid rgba(255, 255, 255, 0.75);
+        white-space: nowrap;
+
+        overflow: hidden;
+    }
+    span.titulo-laranja {
+        font-size: 3.3rem;
+        color: var(--laranja-claro);
+    }
+    .maps-endereco .localizacao .localizacao-content .text-endereco {
+        width: 100%;;
+        font-size:1.5rem;
+        z-index: 2;
+        text-align: justify; 
+    }
+
+    .texto-verde {
+        font-size:1.5rem !important;
+    }
+
+    .maps-endereco .icone-localizacao{
+        width: 100%;
+
+        display: none;
+        justify-content:center ;
+        animation: floatingMobile 4s ease-in-out infinite;
+    }
+    .maps-endereco .icone-localizacao img {
+        text-align: center;
+        height: 80px;
+    }
+    .secao-maps a.btn-maps {
+        margin: 10%;
+    }
+
+    #footer_content {
+        justify-content: space-evenly;
+        padding: 30px 30px 15px 30px;
+        align-items: center;
+        height: 70vh;
+    }
+
+    #footer_social_media {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 0;
+        margin-bottom: 1rem;
+    } 
+
+}
+
+
+
+@media (max-width: 500px) {
+
+    header{
+        display: block;
+    }
+
+    header .logo .img-logo {
+        width: 78px;
+        height: 50px;
+        background-image: url("../images/menu-mobile/logo-branca-mobile.png");
+        background-size: cover;
+    }
+
+    main .btn-flutuante {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+        transition: all 0.5s;
+    }
+
+    main #btn-flutuante-maps {
+        right: 25px;
+        bottom: 70px;
+    }
+    
+    main #btn-flutuante-wpp {
+        right: 25px;
+        bottom: 20px;
+    }
+
+    
+    .informacoes-icone .logo-sobre{
+        width: 280px;
+        height: 178px; 
+    }
+
+    #eixo {
+        background-image: url("../images/artigos-cursos/eixo-mobile.jpg");
+        background-position: 50% 0% !important; 
+    }
+    
+    .informacoes-text .box-paragrafo p{
+        font-size: 2rem; 
+     }
+
+    .maps-endereco .localizacao .localizacao-content .titulo-maps{
+        font-size: 3rem;
+        margin-bottom: 20px;
+        border-right: 2px solid rgba(255, 255, 255, 0.75);
+        white-space: nowrap;
+
+        overflow: hidden;
+    }
+    
+    span.titulo-laranja {
+        font-size: 3rem;
+        color: var(--laranja-claro);
+    }
+
+    .maps-endereco .localizacao .localizacao-content .text-endereco {
+        width: 100%;;
+        font-size:1.6rem;
+        z-index: 2;
+        text-align: justify;
+    }
+
+    .texto-verde {
+        font-size:1.6rem !important;
+    }
+}
+
+
+@media (max-width: 450px) {
+
+    
+    .informacoes-icone .logo-sobre{
+        width: 270px;
+        height: 172px;
+    }
+
+    .informacoes-text .box-paragrafo p{
+        font-size: 2rem; 
+     }
+
+    .informacoes-icone .logo{
+        display: inline-flex;
+        transform: scale(0.60);
+        width: 100%;
+     }
+
+     .logo img{
+        width: 200px;
+        height: 100px;
+     }
+
+     
+    .pg-eixo {
+        font-size: 1.5rem !important;
+        width: 90% !important;
+    }
+
+     
+    .informacoes-text .box-paragrafo p{
+        font-size: 1.6rem; 
+     }
+
+    .maps-endereco .localizacao .localizacao-content .titulo-maps{
+        font-size: 2.1rem;
+        margin-bottom: 20px;
+        border-right: 2px solid rgba(255, 255, 255, 0.75);
+        white-space: nowrap;
+
+        overflow: hidden;
+    }
+    
+    span.titulo-laranja {
+        font-size: 2.1rem;
+        color: var(--laranja-claro);
+    }
+}
+
+@media screen and (max-width: 426px) {
+    #footer_content {
+        gap: 20px;
+        padding-right: 10px;
+        padding-left: 10px;
+        align-items: center;
+        justify-content: center;
+
+    }
+    
+    #footer_social_media {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-top: 0;
+        margin-bottom: 0;
+    } 
+
+}
+
+@media (max-width: 400px) {
+    
+    .pg-eixo {
+        font-size: 1.4rem !important;
+        width: 90% !important;
+    }
+}
+
+@media (max-width: 360px) {
+    .informacoes-icone .logo-sobre{
+        width: 250px;
+        height: 159px;
+    }
+
+    .informacoes-text .box-paragrafo p{
+        font-size: 1.4rem; 
+     }
+
+     
+    .pg-eixo {
+        font-size: 1.3rem !important;
+        width: 90% !important;
+    }
+       
+     #footer_content {
+        gap: 20px;
+        padding-right: 10px;
+        padding-left: 10px;
+        align-items: center;
+        justify-content: center;
+        height: 90vh;
+    }
+
+     #footer_social_media {
+         display: flex;
+         justify-content: center;
+         gap: 1rem;
+         margin-top: 0;
+         margin-bottom: 0;
+     } 
+}
+
+
+
+/* SECTION NEWS */
+
+@media screen and (min-width: 1100px) and (max-width: 1200px) {
+    .slide-container .card .overlay-news-content p {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+}
+@media screen and (min-width: 850px) and (max-width: 1100px) {
+    .slide-container .card .overlay-news-content p {
+        display: -webkit-box;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+    }
+}
+@media screen and (min-width: 750px) and (max-width: 870px) {
+    .slide-container .card .overlay-news-content p {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+}
+@media screen and (min-width: 650px) and (max-width: 750px) {
+    .slide-container .card .overlay-news-content p {
+        display: -webkit-box;
+        -webkit-line-clamp: 7;
+        -webkit-box-orient: vertical;
+    }
+}
+@media screen and (min-width:580px) and (max-width: 650px) {
+    .slide-container .card .overlay-news-content h2 {font-size: 2.5rem;}
+    .slide-container .card .overlay-news-content p {
+        display: -webkit-box;
+        -webkit-line-clamp: 4;
+        -webkit-box-orient: vertical;
+    }
+}
+@media screen and (max-width: 850px) {
+    .slide-container .card .overlay-news-content p {font-size: 1.4rem; }
+}
+@media screen and (max-width: 750px) {
+    .swiper-navBtn {display: none;}
+    .slide-container .card .overlay-news-content .title-news {font-size: 3rem; padding: 10px 20px 0px;}
+    .slide-container .card .overlay-news-content .text-news {font-size: 1.8rem;}
+
+    @keyframes autoplay-loop-animation {
+        0%  {transform: translate3d(0px, 0px, 0px);}
+        10% {transform: translate3d(-260px, 0px, 0px);}
+        20% {transform: translate3d(-600px, 0px, 0px);}
+        30% {transform: translate3d(-940px, 0px, 0px);}
+        40% {transform: translate3d(-1280px, 0px, 0px);}
+        50% {transform: translate3d(-1620px, 0px, 0px);}
+        60% {transform: translate3d(-1960px, 0px, 0px);}
+        70% {transform: translate3d(-2300px, 0px, 0px);}
+        80% {transform: translate3d(-2640px, 0px, 0px);}
+        90% {transform: translate3d(-2980px, 0px, 0px);}
+        100%{transform: translate3d(0px, 0px, 0px);}
+    }
+    .card-wrapper {
+        animation-duration: 25s;
+        animation-name: autoplay-loop-animation;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+        transition: transform 0.3s ease; 
+    }
+}
+@media screen and (min-width: 1200px) {
+    .slide-container .card .overlay-news-content p {
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+    }
+}
+@media screen and (max-width: 580px)  { 
+    .slide-container .card .overlay-news-content h2 {font-size: 2.5rem;}
+    .slide-container .card .overlay-news-content p {
+        display: -webkit-box !important;
+        -webkit-line-clamp: 5;
+        -webkit-box-orient: vertical;
+    }
+}
+@media screen and (max-width: 510px) {
+    .slide-container .card .overlay-news-content {align-items: center; justify-content: center; width: 100%;}
+    .slide-container .card .overlay-news-content h2 {font-size: 2rem; text-align: center;}
+    .slide-container .card .overlay-news-content p {display: none;}
+    @keyframes autoplay-loop-animation {
+        0%   {transform: translate3d(0px, 0px, 0px);}
+        5%   {transform: translate3d(0px, 0px, 0px);}
+        10%  {transform: translate3d(-270px, 0px, 0px);}
+        20%  {transform: translate3d(-560px, 0px, 0px);}
+        30%  {transform: translate3d(-850px, 0px, 0px);}
+        40%  {transform: translate3d(-1140px, 0px, 0px);}
+        50%  {transform: translate3d(-1430px, 0px, 0px);}
+        60%  {transform: translate3d(-1720px, 0px, 0px);}
+        70%  {transform: translate3d(-2010px, 0px, 0px);}
+        80%  {transform: translate3d(-2300px, 0px, 0px);}
+        90%  {transform: translate3d(-2590px, 0px, 0px);  }
+        100% {transform: translate3d(0px, 0px, 0px);}
+    }
+    .card a {
+        height: 250px;
+        width: 250px;
+    }
+    .card .image-news { 
+        position: relative;
+        overflow: hidden;
+        height: 250px;
+        width: 250px;
+    }
+}

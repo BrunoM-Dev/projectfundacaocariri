@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colegio Diocesano Conceito</title>
+    <link rel="shortcut icon" href="../src/images/favicon.png" type="image/png">
+
+    <!-- EXTERNOS -->
+    <link rel="stylesheet" href="../src/libs/bootstrap/css/bootstrap.min.css">
+    <link href="../src/libs/aos-master/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="../src/libs/bootstrap-icons/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="../src/libs/fontawesome-free-6.4.2-web/css/all.min.css">
+    <script src="../src/libs/aos-master/dist/aos.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../src/css/reset.css">
+    <link rel="stylesheet" href="../src/css/styles.css">
+    <link rel="stylesheet" href="../src/css/responsive.css">
+
+    <!-- JAVASCRIPT-->
+    <script src="../src/js/scripts.js" defer></script>
+</head>
+
+<body>
+    <header class="container-fluid header">
+        <div class="row justify-content-space-between align-items-center">
+            <a href="../index.html" class="logo col-3">
+                <h1 class="img-logo"></h1>
+            </a>
+
+            <nav class="nav-bar col-8">
+                <ul class="desktop-menu" id="menu">
+                    <li class="item-menu">
+                        <a href="../index.html" class="nav-link" >Inicio</a>
+                    </li>
+                    <li class="item-menu">
+                        <a href="./eixoglobal.html" class="nav-link"  id="current-page">Eixo global</a>
+                    </li>
+
+                    <li class="item-menu" id="item-menu-cursos">
+                        <a href="../index.html#secao-cursos" class="nav-link">Cursos</a>
+                        <ul class="aba-cursos">
+                            <li><a href="./infantil.html">Educação Infantil</a></li>
+                            <li><a href="./fundamental.html">Ensino Fundamental</a></li>
+                            <li><a href="./medio.html">Ensino Médio</a></li>
+                            <li><a href="./extracurriculares.html">Atividades Extracurriculares</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="item-menu">
+                        <a href="./galeria.html" class="nav-link" >Galeria</a>
+                    </li>
+
+                    <li class="item-menu">
+                        <a href="#footer_contacts" class="nav-link" >Contato</a>
+                    </li>
+                </ul>
+
+                <div class="mobile-menu-icon">
+                    <button onClick="menuShow()"><img src="../src/images/menu-mobile/button_mobile.svg" alt="" class="icone-menu-mobile"></button>
+                </div>
+            </nav>
+
+            <nav class="mobile-menu">
+                <ul class="menu">
+                    <li class="item-menu"><a href="../index.html" class="nav-link" onClick="menuShow()">Inicio</a></li>
+                    <li class="item-menu"><a href="./eixoglobal.html" class="nav-link" onClick="menuShow()" id="current-page">Eixo global</a></li>
+                    <li class="item-menu"><a href="../index.html#secao-cursos" class="nav-link" onClick="menuShow()">Cursos</a></li>
+                    <li class="item-menu"><a href="#footer_contacts" onClick="menuShow()" class="nav-link">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <button class="btn-flutuante" id="btn-flutuante-maps">
+            <a href="https://www.google.com/maps/place/Diocesan+College+of+Crato/@-7.235144,-39.410814,15z/data=!4m6!3m5!1s0x7a18484451aea13:0xb28923c9ecc5939d!8m2!3d-7.2351437!4d-39.4108141!16s%2Fg%2F1tfq4v_7?hl=pt-BR&entry=ttu" target="_blank"><i class="fa-solid fa-location-dot"></i></a>
+        </button>
+        <button class="btn-flutuante" id="btn-flutuante-wpp">
+            <a href="https://api.whatsapp.com/send?phone=5588997137570&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es%21+%F0%9F%98%8A" target="_blank"><i class="bi bi-whatsapp"></i></a>
+        </button>
+
+        <section class="secao-inicial container-fluid" id="eixo">
+            <div class="overlay"></div>
+            <div class="d-flex justify-content-center">
+                <div class="titulo-cursos">
+                    <h1>Eixo Global</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="secao-conteudo container">
+            <div class="article">
+                <h2 class="subtitulo-article">Introdução</h2>
+                <p class="text-article">
+                    O projeto surgiu com a intenção de
+                    suprir uma carência social deixada pela
+                    mudança socioeconômica caracterizada pela
+                    desvalorização monetária, empobrecimento
+                    social e principalmente pelo empoderamento
+                    feminino e o ingresso da mulher no mercado de
+                    trabalho.
+                </p>
+
+                <p class="text-article">
+                    O impacto social dessa transformação
+                    deixou uma lacuna na ‘‘Educação de Casa’’
+                    que tem a função de formação humana. 
+                </p>
+
+                <p class="text-article">
+                    A quem caberia nesse novo modelo de
+                    sociedade esse tipo de educação? Hoje, a
+                    maioria das crianças estão sob cuidados de
+                    parentes ou funcionários do lar. É necessário
+                    compreender que essa nova geração de
+                    crianças nasce e já recebe alta carga de
+                    informação, maior que a de seus pais por
+                    exemplo.
+                </p>
+
+                <p class="text-article">
+                    Baseado nessa ‘‘dor social’’ o Colégio
+                    Diocesano Conceito inovou implantando o Eixo
+                    Global de Ensino, que consiste em formar de
+                    uma maneira inovadora e lúdica nossas
+                    crianças com um propósito: a Humanização.
+                    Para isso elas recebem formação nas mais
+                    diversas áreas do conhecimento, são elas: 
+                    <strong>
+                        Empreendedorismo, Ética e Cidadania,
+                        Sociedade e Meio Ambiente, Nutrição,
+                        Psicomotricidade, Musicalização, Bilíngue,
+                        Pensamento Computacional e Cultura
+                        Maker.
+                    </strong>
+                </p>
+            </div>
+            
+            <div class="article" data-aos="fade-up">
+                <h2 class="subtitulo-article">Empreendedorismo</h2>
+                <p class="text-article">
+                    Na educação Empreendedora, nossos
+                    alunos vivenciam a experiência de aprender desde
+                    cedo a gerir recursos, a serem empreendedores e
+                    protagonistas, além de fortalecer o aprendizado
+                    matemático e desenvolver ideias. A proposta da
+                    educação empreendedora é impulsioná-los a um
+                    futuro criativo, inovador e de protagonismo, nosso
+                    principal objetivo é transformá-lo.
+                </p>
+            </div>
+
+            <div class="article" data-aos="fade-up">
+                <h2 class="subtitulo-article">Ética e Cidadania</h2>
+                <p class="text-article">
+                    Na aprendizagem de Ética e Cidadania eles
+                    recebem noções intermediárias de cidadania, de
+                    seus direitos de deveres, da importância das
+                    relações em sociedade, mas principalmente sobre
+                    respeito ao próximo e suas diferenças. Nosso
+                    principal objetivo é ajudá-los construir uma
+                    sociedade mais justa e igualitária gerando empatia. 
+                </p>
+            </div>
+
+            <div class="article" data-aos="fade-up">
+                <h2 class="subtitulo-article">Sociedade e Meio ambiente</h2>
+                <p class="text-article">
+                    Em Sociedade e Meio Ambiente seguimos a
+                    agenda 2030 da Organização das Nações Unidas
+                    (ONU), assinada em setembro de 2015 em Nova
+                    Iorque. Os 193 estados membros assinaram um
+                    acordo com o intuito de promover ações para
+                    melhorar as condições de vida, climáticas, de
+                    sustentabilidade e para isso elegeram 17 Objetivos
+                    do Desenvolvimento Sustentável (ODS).
+                </p>
+            </div>
+
+            <div class="article" data-aos="fade-up">
+                <h2 class="subtitulo-article">Pensamento computacional e Cultura maker</h2>
+                <p class="text-article">
+                    É uma estratégia usada para criar soluções a
+                    problemas de maneira eficaz, tendo como base a
+                    tecnologia, aliada a ideia de proporcionar ao
+                    estudante o construir, consertar ou criar seus
+                    próprios objetos, com criatividade, sustentabilidade
+                    e colaboratividade.
+                </p>
+            </div>
+
+            <div class="article" data-aos="fade-up">
+                <h2 class="subtitulo-article">Nutrição</h2>
+                <p class="text-article">
+                    Na Educação Nutricional, nossas crianças 
+                    entendem toda a estrutura do alimento, a 
+                    pirâmide nutricional e os benefícios gerados, mas 
+                    principalmente, aprendem sobre a importância da 
+                    produção de alimento sustentável e orgânico. 
+                    Além de fazer bem ao corpo e se preocupar com 
+                    a sustentabilidade do planeta, a 
+                    interdisciplinaridade resulta em projetos onde eles 
+                    atuam, como a Feira do Orgânico.
+                </p>
+            </div>
+
+            <div class="article" data-aos="fade-up">
+                <h2 class="subtitulo-article">Psicomotricidade</h2>
+                <p class="text-article">
+                    Na disciplina de Psicomotricidade as 
+                    crianças aprendem a utilizar o seu corpo 
+                    conhecendo os seus limites, aprendem a cuidar 
+                    da saúde, prevenindo o sedentarismo e a 
+                    obesidade infantil, com o intuito de torná-los mais 
+                    saudáveis.                    
+                </p>
+            </div>
+
+            <div class="article" data-aos="fade-up">
+                <h2 class="subtitulo-article">Musicalização</h2>
+                <p class="text-article">
+                    Na disciplina de Musicalização nossas
+                    crianças aprendem sobre sons, a construção
+                    musical, a instrumentalização e a construção de
+                    instrumentos musicais, tudo isso ligando a boa
+                    formação musical e cultural. Nosso principal
+                    objetivo é torná-los críticos e conhecedores desse
+                    processo de formação na identidade musical.                     
+                </p>
+            </div>  
+
+            <div class="article" data-aos="fade-up">
+                <h2 class="subtitulo-article">Bilíngue</h2>
+                <p class="text-article">
+                    Manter relações globais é essencial para a
+                    evolução da sociedade, principalmente em um
+                    mundo conectado. A aprendizagem através do
+                    Bilíngue vem facilitar essa experiência
+                    globalizada, ainda mais, quando sabemos que
+                    apenas 3% da população em faixa de
+                    empregabilidade, falam um segundo idioma.                     
+                </p>
+            </div>  
+        </section>
+
+    </main>
+
+
+    <footer>
+        <div id="footer_content">
+            <div id="footer-logo">
+                <img src="../src/images/menu-mobile/logo-branca-mobile.png" alt="">
+                <a href="#eixo"><button class="btn"><i class="bi bi-arrow-up-circle-fill btn-voltar"></i></button></a>
+            </div>
+
+            <ul class="footer-list">
+                <li>
+                    <h2>Menu</h2>
+                </li>
+                <li>
+                    <a href="../index.html" class="footer-link">Inicio</a>
+                </li>
+                <li>
+                    <a href="./eixoglobal.html" class="footer-link">Eixo global</a>
+                </li>
+                <li>
+                    <a href="../index.html#secao-cursos" class="footer-link">Cursos</a>
+                </li>
+            </ul>
+
+            <ul class="footer-list">
+                <li>
+                    <h2>Contato</h2>
+                </li>
+                <li> 
+                    <a href="mailto:direcaogeral@diocesanoconceito.com" target="_blank" class="footer-link"><i class="bi bi-envelope-at-fill icone-email"></i>direcaogeral@diocesanoconceito.com</a>
+                </li>
+                <li> 
+                    <a href="mailto:colegiodiocesano.secretaria@gmail.com" target="_blank" class="footer-link"><i class="bi bi-envelope-at-fill icone-email"></i>colegiodiocesano.secretaria@gmail.com</a>
+                </li>
+                <li>
+                    <a href="https://api.whatsapp.com/send?phone=5588997137570&text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es%21+%F0%9F%98%8A" target="_blank" class="footer-link" ><i class="bi bi-telephone-fill icone-faleconosco"></i> Fale conosco</a>
+                </li>
+            </ul>
+
+            <div id="footer_contacts">
+                <div id="footer_social_media">
+                    <a href="https://www.instagram.com/diocesanodocratoconceito/" class="footer-link" target="_blank" id="instagram">
+                        <i class="bi bi-instagram"></i>
+                    </a>
+
+                    <a href="https://www.youtube.com/channel/UCkdwV68PetF2mRnHeDsrVMw" class="footer-link" target="_blank" id="youtube">
+                        <i class="bi bi-youtube"></i>
+                    </a>
+
+                    <a href="https://www.tiktok.com/@colegiodiocesano1" class="footer-link" target="_blank" id="tiktok">
+                        <i class="bi bi-tiktok"></i>
+                    </a>
+                    
+                    <a href="https://twitter.com/DiocesanoConc_" class="footer-link" target="_blank" id="twitter">
+                        <i class="bi bi-twitter"></i>
+                    </a>
+
+                    <a href="https://www.linkedin.com/company/col%C3%A9gio-diocesano-conceito/" class="footer-link" target="_blank" id="linkedin">
+                        <i class="bi bi-linkedin"></i>
+                    </a>
+                </div>
+
+                <div id="slogan">
+                    <p>A educação humanizada <br> transforma.</p>
+                </div>
+            </div>
+        </div> 
+        <div id="footer_copyright">
+            &#169
+            2023 Todos os direitos reservados
+        </div>
+    </footer>
+
+    <script> AOS.init({duration: 700}); </script>
+</body>
+</html>

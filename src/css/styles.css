@@ -1,0 +1,1235 @@
+:root {
+    --verde-escuro: #006414;
+    --verde-intermediario: #009929;
+    --verde-claro: #5ccb5f;
+
+    --laranja-escuro: #f58634;
+    --laranja-intermediario: #f9a132;
+    --laranja-claro: #f2b448;
+    
+    --branco-font: #fff;
+
+    --color-neutral-0: #0e0c0c;
+    --color-neutral-10: #171717;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #f5f5f5;
+
+
+    /* FUNCAR */
+    --azul-claro: #00AFF0;
+    --azul-escuro: #353C81;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 90px;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+        border-right-color: transparent;
+    }
+}
+
+@keyframes blinkCursor {
+    from {
+        border-right-color: rgba(255, 255, 255, 1);
+    }
+
+    to {
+        border-right-color: transparent;
+    }
+}
+
+@keyframes autoplay-loop-animation {
+    0% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+    10% {
+        transform: translate3d(0px, 0px, 0px);
+    }
+    20% {   
+        transform: translate3d(-340px, 0px, 0px);
+    }
+    30% {   
+        transform: translate3d(-340px, 0px, 0px);
+    }
+    40% {
+        transform: translate3d(-680px, 0px, 0px);
+    }
+    50% {   
+        transform: translate3d(-1020px, 0px, 0px);
+    }
+    60% {   
+        transform: translate3d(-1360px, 0px, 0px);
+    }
+    70% {   
+        transform: translate3d(-1700px, 0px, 0px);
+    }
+    80% {
+        transform: translate3d(-2000px, 0px, 0px);
+    }
+    90% {
+        transform: translate3d(-2000px, 0px, 0px);
+    }
+    100% {   
+        transform: translate3d(0px, 0px, 0px);
+    }
+}
+
+.autoplay {
+    animation-duration: 20s;
+    animation-name: autoplay-loop-animation !important;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    transition: transform 0.3s ease; 
+}
+
+
+
+.header {
+    background-color: var(--azul-escuro);
+    color: var(--branco-font);
+    max-height: 97px;
+    z-index: 99;
+    box-shadow: 7px -6px 20px 3px #000000;
+    ;
+    padding: 30px 0px;
+    ;
+    position: fixed;
+}
+
+header .logo .img-logo {
+    height: 37px;
+    background-image: url("../images/menu-desktop/logo-branca-desktop.jpg");
+    background-repeat: no-repeat;
+    margin: 0 0 0 20px;
+    font-size: 0px;
+}
+
+.text-green {color: #73ec04;}
+
+nav .desktop-menu {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    font-size: 2rem;
+    margin-bottom: 0;
+}
+
+nav .desktop-menu .item-menu {
+    white-space: nowrap;
+    margin-right: 40px;
+    transition: 0.15s;
+}
+
+nav .desktop-menu #item-menu-cursos {
+    position: relative;
+}
+
+nav .desktop-menu #item-menu-cursos .aba-cursos {
+    position: absolute;
+    left: 50%;
+    top: 63px;
+    transform: translateX(-50%);
+    background-color: var(--azul-escuro);
+    overflow: hidden;
+    height: 0;
+    transition: 0.5s;
+    padding: 0 30px;
+    box-shadow: 0px -1px 30px black;
+}
+
+nav .desktop-menu #item-menu-cursos:hover .aba-cursos {
+    position: absolute;
+    display: inline-flex;
+    flex-direction: column;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--azul-escuro);
+    overflow: hidden;
+    height: fit-content;
+    padding: 30px;
+}
+
+nav .desktop-menu #item-menu-cursos .aba-cursos li {
+
+    flex-direction: column;
+    background-color: var(--azul-escuro);
+    padding: 10px 0;
+    border-radius: 8px;
+}
+
+nav .desktop-menu #item-menu-cursos .aba-cursos li:hover {
+    background-color: var(--azul-escuro);
+    padding: 10px 0;
+    border-radius: 8px;
+    transform: scale(1.10);
+    transition: .3s;
+}
+
+nav .desktop-menu #item-menu-cursos .aba-cursos li a {
+    color: #fff;
+}
+
+#current-page {color: #ffae4a;}
+
+nav .desktop-menu .item-menu:hover {
+    transition: .3s;
+    transform: scale(1.1);
+}
+
+main .btn-flutuante {
+    position: fixed;
+    display: inline;
+    z-index: 99;
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    font-size: 32px;
+    transition: all 0.5s;
+}
+
+main #btn-flutuante-maps {
+    right: 25px;
+    bottom: 85px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #d82626;
+}
+
+main #btn-flutuante-wpp {
+    right: 25px;
+    bottom: 20px;
+    background-color: #25D366;
+}
+
+main #btn-flutuante-maps:hover {
+    transform: scale(1.20);
+}
+
+main #btn-flutuante-wpp:hover {
+    transform: scale(1.20);
+}
+
+main #btn-flutuante-maps a {
+    color: #fff;
+    transition: 0.5s;
+}
+
+main #btn-flutuante-wpp a {
+    color: #fff;
+    transition: 0.5s;
+}
+
+section.container {
+    width: 90vw !important;
+    padding-top: 40px;
+}
+
+div.carousel-inner {
+    margin: 100px 0 40px 0;
+    border-radius: 10px;
+    box-shadow: 2px 3px 20px black;
+}
+
+.carousel-control-prev-icon {
+    display: inline-block;
+    opacity: 0.8;
+    background-image: url(../images/seta.png);
+    transform: scale(2) rotate(180deg);
+    transition: 0.3s;
+}
+
+.carousel-control-next-icon {
+    display: inline-block;
+    opacity: 0.8;
+    background-image: url(../images/seta.png);
+    transform: scale(2);
+    transition: 0.3s;
+}
+
+.carousel-control-prev-icon:hover {
+    opacity: 1;
+    transform: scale(2.5) rotate(180deg);
+}
+
+.carousel-control-next-icon:hover {
+    opacity: 1;
+    transform: scale(2.5);
+}
+
+.secao-galeria .carousel-control-next, .secao-galeria .carousel-control-prev {top: 0;}
+
+.carousel-control-next, .carousel-control-prev {top: 28%;}
+
+#secao-cards {margin-top: 40px;}
+
+.box-cards {
+    display: flex;
+    z-index: 2;
+    width: 100%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.card-item {
+    width: 30%;
+    z-index: 2;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    box-shadow: 4px 2px 10px black;
+}
+
+.card-item-top {
+    position: relative;
+    z-index: 2;
+    border-radius: 10px 10px 0px 0px;
+    height: 80px;
+    padding: 30px;
+}
+
+#card-1 .card-item-top {
+    background-color: var(--verde-claro);
+}
+
+#card-2 .card-item-top {
+    background-color: var(--laranja-intermediario);
+}
+
+#card-3 .card-item-top {background-color: rgb(55, 69, 163)}
+
+.card-item-top .img-card {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: transparent;
+    backdrop-filter: blur(100px);
+    top: -60%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.icone {font-size: 40px;}
+
+.img-card-item {
+    width: 80%;
+    height: 80%;
+}
+
+.card-item-bottom {
+    line-height: 1.5;
+    padding: 15px 20px 30px 30px;
+    width: 100%;
+}
+
+.card-item-bottom .titulo-card {
+    font-size: 2.1rem;
+    font-family: 'Gilroy-extrabold';
+    text-align: center;
+    color: var(--branco-font);
+    margin-bottom: 1.5rem;
+    width: 100%;
+}
+
+.card-item-bottom .paragrafo-card {
+    font-weight: 400;
+    font-size: 1.8rem;
+    width: 99%;
+    color: #fff;
+    text-align: left;
+}
+
+#card-1 {background-color: var(--verde-intermediario);}
+
+#card-2 {background-color: var(--laranja-escuro);}
+
+#card-3 {background-color: #36407E;}
+
+#card-1 .img-card {border: 3px solid var(--verde-intermediario);}
+
+#card-2 .img-card {border: 3px solid var(--laranja-escuro);}
+
+#card-3 .img-card { border: 3px solid #44509e;}
+
+
+#secao-cursos {margin-top: 30px;}
+
+.titulo-secao {
+    font-weight: bolder;
+    font-size: 6rem;
+    text-align: center;
+    padding: 5px 0px;
+    margin-bottom: 35px;
+    text-shadow: 1px 0px 1px black;
+    color: var(--verde-intermediario);
+}
+
+#secao-news .titulo-secao {
+    margin: 15px 0;
+}
+
+.secao-cursos-conteudo {
+    display: flex;
+    align-items: center;
+    height: 90%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    z-index: 5;
+}
+
+.curso-card {
+    background-color: #f4f4f4;
+    padding: 0px;
+    border-radius: 8px;
+    box-shadow: 4px 2px 10px black;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: all 0.5s;
+    width: 30%;
+}
+
+.curso-card.extracurricular {
+    width: 100%;
+}
+
+.curso-card:hover {
+    transform: scale(1.05);
+    padding: 0px;
+    border-radius: 8px;
+    box-shadow: 4px 2px 10px var(--verde-claro);
+    display: inline-flex;
+    flex-direction: column;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.curso-card .curso-imagem img {
+    width: 100%;
+    height: 150px;
+    object-position: top;
+    object-fit: cover;
+}
+
+#card-ensino-medio {
+    object-position: 50%;
+}
+
+#extracurricular-image img {
+    object-position: 50% 35%;
+    height: 180px;
+}
+
+.curso-card .curso-info {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.curso-card .curso-info h3 {
+    font-size: 2.5rem;
+    margin-top: 0;
+    text-align: center;
+}
+
+.curso-card .curso-info p.descricao-curso {
+    font-size: 1.3rem;
+    color: #555;
+    margin-bottom: 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.5s ease-in-out;
+    text-align: center;
+}
+
+.curso-card .curso-info a .botao-saiba-mais {
+    display: inline-block;
+    background-color: var(--laranja-escuro);
+    border: none;
+    color: #fff;
+    width: 90%;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 1.6rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.curso-card .curso-info a {
+    width: 90%;
+    text-align: center;
+}
+
+.curso-card .curso-info .botao-saiba-mais:hover {
+    background-color: var(--laranja-intermediario);
+    color: #fff;
+}
+
+.curso-card .curso-info .botao-saiba-mais.efeito-clicked {
+    background-color: var(--verde-intermediario);
+}
+
+#secao-informacoes {
+    background-color: var(--branco-font);
+}
+
+.informacoes {
+    display: flex;
+    align-items: center;
+    height: 80%;
+    flex-wrap: wrap;
+
+}
+
+.informacoes:first-of-type {
+    padding-top: 60px;
+    padding-bottom: 40px;
+}
+
+.informacoes:last-of-type {
+    padding-bottom: 70px;
+}
+
+.informacoes-icone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--branco-font);
+    height: 400px;
+    border-radius: 12px;
+}
+
+.informacoes-icone .logo-sobre {
+    display: flex;
+    align-items: center;
+    background-image: url("../images/secao-sobre/logo\ diminuida.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    width: 400px;
+    height: 255px;
+}
+
+.logo img {
+    width: 300px;
+}
+
+.informacoes-text {
+    background-color: var(--verde-intermediario);
+    color: var(--branco-font);
+    height: 400px;
+    border-radius: 12px;
+}
+
+.informacoes-text .box-paragrafo {
+    width: 100%;
+    display: flex;
+    height: 80%;
+
+    justify-content: center;
+    align-items: center;
+}
+
+.informacoes-text .box-paragrafo p {
+    width: 80%;
+    font-size: 2.3rem;
+    margin: 0;
+}
+
+.pg-eixo {
+    font-size: 2rem !important;
+    width: 90% !important;
+}
+
+.informacoes .logo-eixoglobal {
+    display: flex;
+    align-items: center;
+
+    justify-content: center;
+}
+.informacoes .logo-eixoglobal img {
+    height: 360px ;
+}
+
+.informacoes .btn-eixoglobal .btn {
+    width: 180px;
+    height: 60px;
+    cursor: pointer;
+    background: var(--laranja-escuro);
+    border-radius: 1px;
+    outline: none;
+    border: 1px solid #fff;
+    transition: 1s ease-in-out;
+    position: relative;
+}
+
+.informacoes .btn-eixoglobal .btn svg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    fill: none;
+    stroke: #fff;
+    stroke-dasharray: 150 480;
+    stroke-dashoffset: 150;
+    transition: 1s ease-in-out;
+    border-radius: 1px;
+    width: 180px;
+    height: 60px;
+}
+
+.informacoes .btn-eixoglobal .btn:hover {
+    transition: 1s ease-in-out;
+    background: var(--laranja-intermediario) ;
+}
+
+.informacoes .btn-eixoglobal .btn:hover svg {
+    stroke-dashoffset: -480;
+}
+
+.informacoes .btn-eixoglobal .btn span {
+    color: white;
+    font-size: 18px;
+    font-weight: 100;
+}
+
+section#secao-news{
+    margin:20px 0 50px;
+}
+
+.slide-container {
+    margin: 0 40px;
+}
+
+.card-wrapper:hover {
+    animation-play-state: paused;
+}
+
+
+.slide-container .card {
+    background-color: #fff;
+    border-radius: 8px;
+    position: relative;
+    overflow: hidden;
+    cursor: grab;
+    text-overflow: ellipsis;
+    width: auto !important;
+    margin-right: 40px !important;
+}
+
+.slide-container .card:last-of-type(1) {
+    border: 10px solid green;
+}
+
+.card a {
+    height: 300px;
+    width: 300px;
+}
+
+.card .image-news { 
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+    width: 300px;
+}
+
+.slide-container .card .image-news img {
+    width: 100%;
+    height: auto ;
+    border-radius: 8px;
+    z-index: -1 ;
+    object-fit: cover;
+    /*  box-shadow: 2px 4px 9px #73ec04; */
+    transition: 0.5s;
+    transform: scale(1.02);
+}
+
+.slide-container .card .overlay-news {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    transition: opacity .3s ease;
+    z-index: 10;
+}
+
+.slide-container .card:hover .overlay-news {opacity: 1;}
+
+.slide-container .card:hover .image-news img {transform: scale(1.2);}
+
+.slide-container .card .overlay-news-content {
+    left: 2%; 
+    color: #fff;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.slide-container .card .overlay-news-content .title-news {
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    padding: 0 20px 0;
+    width: 100%;
+    font-weight: bold;
+    font-family: 'Gilroy-extrabold', sans-serif;
+}
+
+.slide-container .card .overlay-news-content .text-news {
+    display: -webkit-box;
+    font-size: 2rem;
+    overflow: hidden;
+    padding: 0 20px ;
+    font-family: 'Gilroy', sans-serif;
+}
+
+
+.swiper-pagination {
+    position: relative;
+    margin-top: 20px; 
+ }
+
+.swiper-navBtn {
+    color: #000000;
+    height: 40px;
+    width: 40px;
+    background: #fff;
+    border-radius: 50%;
+    transition: 0.3s;
+    transform: translateY(120%)
+}
+
+.swiper-navBtn:hover {
+    color: #fff;
+    background: #F9A132;
+    border-radius: 50%;
+    transform: translateY(-50%), scale(1.23);
+}
+    
+.swiper-navBtn::before,
+.swiper-navBtn::after {font-size: 18px;}
+
+.swiper-pagination-bullet {
+    background-color: #fff;
+    border: 3px solid #73ec04;
+}
+
+
+.secao-maps {
+    border-radius: 10px;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: var(--branco-font);
+}
+
+.secao-maps .secao-maps-top {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh);
+    background-image: url('../images/secao-maps/imagem-do-colegio.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .6);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.maps-endereco {
+    display: flex;
+    height: 100%;
+    align-items: center;
+}
+
+.maps-endereco .localizacao {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: var(--branco-font);
+    z-index: 2;
+}
+
+.typing-animation {
+    animation: blinkCursor steps(40) 500ms infinite normal, typing 4s steps(60) 1s normal both;
+}
+
+.maps-endereco .localizacao-content {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.maps-endereco .localizacao .localizacao-content h2, span {
+    color: var(--branco-font);
+}
+
+.maps-endereco .localizacao .localizacao-content .titulo-maps {
+    font-size: 6rem;
+    margin-bottom: 20px;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.maps-endereco .localizacao .localizacao-content .text-endereco {
+    width: 80%;
+    ;
+    font-size: 2rem;
+    z-index: 2;
+    text-align: justify;
+}
+
+span.titulo-laranja {
+    font-size: 6rem;
+    color: var(--laranja-claro);
+}
+
+span.texto-verde {
+    font-size: 2rem;
+    color: var(--laranja-claro);
+}
+
+.maps-endereco .icone-localizacao {
+    border-radius: 10px;
+    z-index: 2;
+    transform: translateY(0px);
+    transform: translateX(0px);
+    animation: floating 4s ease-in-out infinite;
+}
+
+.maps-endereco .icone-localizacao img {
+    height: 150px;
+}
+
+.secao-maps a.btn-maps {
+    background-color: var(--verde-intermediario);
+    justify-items: center;
+    text-align: center;
+    margin: 5%;
+    width: 80px;
+    cursor: pointer;
+    border-radius: 20px;
+    box-shadow: 2px 2px 15px var(--verde-intermediario);
+    animation: floating 2s ease-in-out infinite ;
+    z-index: 2;
+    transition: all 0.7s;
+}
+
+.secao-maps a.btn-maps:hover {
+    background-color:#fff;
+}
+
+.secao-maps a.btn-maps:hover  i{
+    color: var(--verde-intermediario);
+}
+
+.secao-maps a.btn-maps i {
+    color: white ;
+    font-size: 35px;
+    text-align: center;    
+    transition: all 0.7s;
+}
+
+@keyframes floating {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.maps-right {
+    display: flex;
+    justify-content: center;
+}
+
+.maps-right .iframe-maps {
+    width: 100%;
+}
+
+footer {
+    width: 100%;
+    color: var(--color-neutral-40);
+}
+
+.footer-link {
+    text-decoration: none;
+}
+
+#footer_content {
+    background-color: var(--color-neutral-10);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 3rem 3%;
+    position: relative;
+}
+
+#footer-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#footer-logo>img {
+    height: 80px;
+    margin-bottom: 0.75rem;
+}
+
+#footer-logo a {
+    display: flex;
+    justify-content: center;
+}
+
+#footer-logo button {
+    font-family: 'Gilroy', sans-serif;
+    font-size: 2rem;
+    font-weight: bolder;
+    color: white;
+}
+
+#footer-logo .bi.bi-arrow-up-circle-fill.btn-voltar {
+    font-size: 30px;
+    color: #fff;
+    transition: 0.5s;
+}
+
+#footer-logo a:hover .bi.bi-arrow-up-circle-fill.btn-voltar {
+    color: var(--verde-intermediario);
+}
+
+#footer_social_media {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+#footer_social_media .footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 2.5rem;
+    width: 2.5rem;
+    color: var(--color-neutral-40);
+    border-radius: 50%;
+    transition: all 0.4s;
+}
+
+#footer_social_media .footer-link i {
+    font-size: 1.25rem;
+}
+
+#footer_social_media .footer-link:hover {
+    opacity: 0.8;
+}
+
+#instagram .bi.bi-instagram, #youtube .bi.bi-youtube, #tiktok .bi.bi-tiktok, #twitter .bi.bi-twitter, #linkedin .bi.bi-linkedin {
+    display: inline-flex;
+    font-size: 20px;
+    transition: .2s;
+    color: #ffffffc2;
+}
+
+#instagram:hover .bi.bi-instagram, #youtube:hover .bi.bi-youtube, #tiktok:hover .bi.bi-tiktok, #twitter:hover .bi-twitter, #linkedin:hover .bi.bi-linkedin {
+    transform: scale(1.1);
+    color: var(--verde-intermediario);
+}
+
+.footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+}
+
+.footer-list .footer-link {
+    color: var(--color-neutral-30);
+    transition: all 0.4s;
+    cursor: pointer;
+    font-size: 1.4rem;
+}
+
+.footer-list .footer-link:hover {
+    color: var(--verde-intermediario);
+}
+
+.bi.bi-envelope-at-fill.icone-email,
+.bi.bi-telephone-fill.icone-faleconosco {
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+#footer_contacts #slogan {
+    font-size: 1.5rem;
+    text-align: center;
+    color: white;
+}
+
+#footer_copyright {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-neutral-0);
+    font-size: 1.3rem;
+    padding: 1.5rem;
+    font-weight: 100;
+}
+
+
+main .secao-inicial {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    height: 500px;
+    color: var(--branco-font);
+    background-image: url("../images/artigos-cursos/infantil-guia-2.JPG");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 40%;
+    background-attachment: fixed;
+}
+
+#eixo {
+    background-image: url("../images/artigos-cursos/eixo.jpg");
+    background-position: 50% 0% !important; 
+}
+
+#infantil {background-image: url("../images/artigos-cursos/infantil-guia-2.JPG");}
+
+#fundamental {background-image: url("../images/artigos-cursos/fudamental-guia.jfif");}
+
+#medio {background-image: url("../images/artigos-cursos/medio-guia.jpg");}
+
+#extracurricular {background-image: url("../images/artigos-cursos/extracurricular-guia.JPG");}
+
+main {overflow: hidden ;}
+
+main .secao-inicial {width: 100vw !important;}
+
+main .secao-conteudo.container {
+    /* background-image: url(../images/secao-sobre/diocesano-eixoglobal.png);
+    background-position: 50% 10%;
+    background-repeat: no-repeat; */
+    padding-top: 60px !important;
+}
+
+main .secao-inicial .titulo-cursos {
+    z-index: 2;
+}
+
+main .secao-inicial .titulo-cursos h1 {
+    font-size: 5rem;
+    margin-top: 30px;
+    text-align: center;
+}
+
+main .secao-inicial .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .4);
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+main .secao-conteudo {
+    width: 60vw !important;
+}
+
+main .secao-conteudo .article {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+main .secao-conteudo .article h2.subtitulo-article {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+main .secao-conteudo .article p.text-article {
+    font-size: 2rem;
+    font-family: 'Gilroy-light', sans-serif;
+    margin-bottom: 30px;
+    line-height: 1.3;
+    width: 100%;
+}
+
+main .secao-conteudo .table-turmas table  {
+    width: 90%;
+}   
+
+main .secao-conteudo .table-turmas table tr th,td {
+    border: 3px solid black;
+    padding: 10px;
+    font-size: 2rem;
+    text-align: center;
+}
+
+main .secao-conteudo .table-turmas table th {
+    background-color: var(--verde-claro);
+}
+
+@media (max-width: 800px) {
+    main .secao-conteudo .table-turmas table  {
+        width: 100%;
+    }  
+}
+
+main .secao-conteudo .article ul li {
+    list-style-type: disc;
+    font-size: 1.7rem;
+    font-family: 'Gilroy-light', sans-serif;
+    margin-bottom: 10px;
+}
+
+
+main .secao-galeria {
+    min-height: calc(100vh - 97px);
+    margin: 90px auto;
+    gap: 40px;
+
+}
+
+.secao-galeria div.carousel-inner {
+    margin: 0;
+}
+
+.secao-galeria .carousel-item {
+    background-position: center center;
+    background-size: cover; 
+    background-repeat: no-repeat;   
+    height: 500px;
+    object-fit: cover;
+    object-position: 50%;
+}
+
+#fotogaleria1  {background-image: url(../images/galeria/mae/diamae.jpg);}
+#fotogaleria2  {background-image: url(../images/galeria/mae/mae4.jpg);}
+
+#fotogaleria3  {background-image: url(../images/galeria/pai/diapai.JPG);}
+#fotogaleria4  {background-image: url(../images/galeria/pai/pai2.JPG);}
+#fotogaleria5  {background-image: url(../images/galeria/pai/pai3.JPG);}
+#fotogaleria6  {background-image: url(../images/galeria/pai/pai4.JPG);}
+#fotogaleria7  {background-image: url(../images/galeria/pai/pai5.JPG);}
+
+#fotogaleria8  {background-image: url(../images/galeria/hallowen/hallowen1.jpg);}
+#fotogaleria9  {background-image: url(../images/galeria/hallowen/hallowen2.jpg);}
+#fotogaleria10 {background-image: url(../images/galeria/hallowen/hallowen3.jpg);}
+#fotogaleria11 {background-image: url(../images/galeria/hallowen/hallowen4.jpg);}
+
+#fotogaleria12 {background-image: url(../images/galeria/kidsnight/kidsnight.JPG);}
+#fotogaleria13 {background-image: url(../images/galeria/kidsnight/kidsnight\ \(1\).JPG);}
+#fotogaleria14 {background-image: url(../images/galeria/kidsnight/kidsnight\ \(2\).JPG);}
+#fotogaleria15 {background-image: url(../images/galeria/kidsnight/kidsnight\ \(3\).JPG);}
+#fotogaleria16 {background-image: url(../images/galeria/kidsnight/kidsnight\ \(4\).JPG);}
+
+#fotogaleria17 {background-image: url(../images/galeria/jogos/jogos\ \(1\).jpg);}
+#fotogaleria18 {background-image: url(../images/galeria/jogos/jogos\ \(2\).jpg);}
+#fotogaleria19 {background-image: url(../images/galeria/jogos/jogos\ \(3\).jpg);}
+#fotogaleria20 {background-image: url(../images/galeria/jogos/jogos\ \(4\).jpg);}
+#fotogaleria21 {background-image: url(../images/galeria/jogos/jogos\ \(5\).jpg);}
+#fotogaleria22 {background-image: url(../images/galeria/jogos/jogos\ \(6\).jpg);}
+#fotogaleria23 {background-image: url(../images/galeria/jogos/jogos\ \(7\).jpg);}
+
+#fotogaleria24 {background-image: url(../images/galeria/paixaocristo/paixaodecristo\ \(1\).jpg);}
+#fotogaleria25 {background-image: url(../images/galeria/paixaocristo/paixaodecristo\ \(2\).jpg);}
+#fotogaleria26 {background-image: url(../images/galeria/paixaocristo/paixaodecristo\ \(3\).jpg);}
+#fotogaleria27 {background-image: url(../images/galeria/paixaocristo/paixaodecristo\ \(4\).jpg);}
+#fotogaleria28 {background-image: url(../images/galeria/paixaocristo/paixaodecristo\ \(5\).jpg);}
+#fotogaleria29 {background-image: url(../images/galeria/paixaocristo/paixaodecristo\ \(6\).jpg);}
+#fotogaleria30 {background-image: url(../images/galeria/paixaocristo/paixaodecristo\ \(7\).jpg);}
+
+#fotogaleria31 {background-image: url(../images/galeria/saojoao/saojoao\ \(1\).jpg);}
+#fotogaleria32 {background-image: url(../images/galeria/saojoao/saojoao\ \(2\).jpg);}
+#fotogaleria33 {background-image: url(../images/galeria/saojoao/saojoao\ \(3\).jpg);}
+#fotogaleria34 {background-image: url(../images/galeria/saojoao/saojoao\ \(4\).jpg);}
+#fotogaleria35 {background-image: url(../images/galeria/saojoao/saojoao\ \(5\).jpg);}
+
+#fotogaleria36 {background-image: url(../images/galeria/jogos/jogos\ \(8\).jpg);}
+#fotogaleria37 {background-image: url(../images/galeria/jogos/jogos\ \(9\).jpg);}
+#fotogaleria38 {background-image: url(../images/galeria/jogos/jogos\ \(10\).jpg);}
+#fotogaleria39 {background-image: url(../images/galeria/jogos/jogos\ \(11\).jpg);}
+#fotogaleria40 {background-image: url(../images/galeria/jogos/jogos\ \(12\).jpg);}
+
+#fotogaleria41 {background-image: url(../images/galeria/saojoao/saojoao\ \(11\).jpg);}
+#fotogaleria42 {background-image: url(../images/galeria/saojoao/saojoao\ \(12\).jpg);}
+#fotogaleria43 {background-image: url(../images/galeria/saojoao/saojoao\ \(13\).jpg);}
+#fotogaleria44 {background-image: url(../images/galeria/saojoao/saojoao\ \(14\).jpg);}
+#fotogaleria45 {background-image: url(../images/galeria/saojoao/saojoao\ \(15\).jpg);}
+
+#fotogaleria46 {background-image: url(../images/galeria/paixaocristo/paixaodecristo\ \(8\).jpg);}
+#fotogaleria47 {background-image: url(../images/galeria/paixaocristo/paixaodecristo\ \(9\).jpg);}
+#fotogaleria48 {background-image: url(../images/galeria/paixaocristo/paixaodecristo\ \(10\).jpg);}
+#fotogaleria49 {background-image: url(../images/galeria/paixaocristo/paixaodecristo\ \(11\).jpg);}
+#fotogaleria50 {background-image: url(../images/galeria/paixaocristo/paixaodecristo\ \(12\).jpg);}
+
+#fotogaleria51 {background-image: url(../images/galeria/mae/mae\ \(1\).jpg);}
+#fotogaleria52 {background-image: url(../images/galeria/mae/mae\ \(2\).jpg);}
+
+.box-galeria {
+    width: 100%;
+    display: flex;
+    align-items: center;   
+    justify-content: center;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 30px;
+    overflow-x: hidden; 
+    overflow-y: hidden;  
+}
+
+.galeria .miniatura{
+    width: 100%;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.galeria .miniatura:hover {
+    box-shadow: 0px 0px 30px var(--verde-intermediario);
+}
+
