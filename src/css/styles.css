@@ -106,10 +106,10 @@ html {
 }
 
 header .logo .img-logo {
-    height: 37px;
-    background-image: url("../images/menu-desktop/logo-branca-desktop.jpg");
+    height: 50px;
+    background-image: url("../images/funcar/funcar-logo-branca.png");
     background-repeat: no-repeat;
-    margin: 0 0 0 20px;
+    margin: -10px 0 0 50px;
     font-size: 0px;
 }
 
