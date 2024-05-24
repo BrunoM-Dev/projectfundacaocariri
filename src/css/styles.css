@@ -517,7 +517,7 @@ div.carousel-inner {
 .informacoes-icone .logo-sobre {
     display: flex;
     align-items: center;
-    background-image: url("../images/secao-sobre/logo\ diminuida.png");
+    background-image: url("../images/funcar/funcar-logo.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -531,7 +531,7 @@ div.carousel-inner {
 }
 
 .informacoes-text {
-    background-color: var(--verde-intermediario);
+    background-color: var(--azul-escuro);
     color: var(--branco-font);
     height: 400px;
     border-radius: 12px;
