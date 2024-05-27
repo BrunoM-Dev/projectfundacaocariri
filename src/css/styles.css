@@ -18,6 +18,7 @@
     /* FUNCAR */
     --azul-claro: #00AFF0;
     --azul-escuro: #353C81;
+    --azul-intermediario: #18a0d1;
 }
 
 html {
@@ -298,11 +299,11 @@ div.carousel-inner {
 }
 
 #card-1 .card-item-top {
-    background-color: var(--verde-claro);
+    background-color: rgb(55, 69, 163);
 }
 
 #card-2 .card-item-top {
-    background-color: var(--laranja-intermediario);
+    background-color: var(--azul-claro);
 }
 
 #card-3 .card-item-top {background-color: rgb(55, 69, 163)}
@@ -352,15 +353,15 @@ div.carousel-inner {
     text-align: left;
 }
 
-#card-1 {background-color: var(--verde-intermediario);}
+#card-1 {background-color: var(--azul-escuro)}
 
-#card-2 {background-color: var(--laranja-escuro);}
+#card-2 {background-color: var(--azul-intermediario);}
 
-#card-3 {background-color: #36407E;}
+#card-3 {background-color: var(--azul-escuro);}
 
-#card-1 .img-card {border: 3px solid var(--verde-intermediario);}
+#card-1 .img-card {border: 3px solid #44509e;}
 
-#card-2 .img-card {border: 3px solid var(--laranja-escuro);}
+#card-2 .img-card {border: 3px solid var(--azul-claro);}
 
 #card-3 .img-card { border: 3px solid #44509e;}
 
