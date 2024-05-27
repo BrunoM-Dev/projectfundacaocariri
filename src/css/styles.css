@@ -517,13 +517,14 @@ div.carousel-inner {
 .informacoes-icone .logo-sobre {
     display: flex;
     align-items: center;
-    background-image: url("../images/funcar/funcar-logo.png");
+    background-image: url("../images/funcar/funcar.png");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     justify-content: center;
-    width: 400px;
-    height: 255px;
+    width: 350px;
+    height: 197px;
+    margin-bottom: 80px;
 }
 
 .logo img {
