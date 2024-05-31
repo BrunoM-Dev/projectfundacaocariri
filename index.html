@@ -216,9 +216,9 @@
                 <div data-aos="fade-up" class="container informacoes d-flex">
                     <div class="col-12 col-md-6 informacoes-text order-2 order-md-1">
                         <div class="box-paragrafo">
-                            <p class="pg-eixo">O projeto visa preencher lacunas sociais devido a mudanças econômicas, empoderamento feminino e transformações na educação infantil. O Colégio Diocesano Conceito adotou o Eixo Global de Ensino, incluindo áreas como Empreendedorismo, Ética, Sociedade, Meio Ambiente, Nutrição entre outras. Essa abordagem inovadora prepara crianças desde cedo para a crescente carga de informações, promovendo uma formação completa e diversificada.</p>
+                            <p class="pg-eixo">A Fundação Cariri (FUNCAR) promove uma série de eventos culturais, educacionais e assistenciais na região do Cariri. Nossos projetos são voltados para o desenvolvimento comunitário e a valorização da cultura local. Através de atividades diversas, como oficinas, exposições e programas de apoio social, buscamos melhorar a qualidade de vida da população e fortalecer nossa identidade cultural. Participe de nossas iniciativas e contribua para o crescimento e fortalecimento de nossa comunidade.</p>
                         </div>
-                        <div class="btn-eixoglobal d-flex justify-content-center">
+<!--                         <div class="btn-eixoglobal d-flex justify-content-center">
                             <a href="./pages/eixoglobal.html">
                                 <button class="btn">
                                     <svg viewBox="0 0 180 60" class="border">
@@ -228,12 +228,34 @@
                                     <span>Saiba Mais</span>
                                 </button>
                             </a>
-                        </div>
+                        </div> -->
                     </div>
                     <div class="col-12 col-md-6 informacoes-icone d-flex order-md-2">
-                        <div class="logo-eixoglobal">
-                            <img src="src/images/secao-sobre/diocesano-eixoglobal.png" alt="">
-                        </div>
+                        <div class="swiper mySwiper">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="card-eventos">
+                                    </div>
+                                </div>
+                                
+                                <div class="swiper-slide">
+                                    <div class="card-eventos">
+                                        <img src="src/images/funcar/projetos/SLIDES.png" alt="">
+                                    </div>
+                                </div>
+
+                                <div class="swiper-slide">
+                                    <div class="logo-eixoglobal">
+                                        <img src="src/images/funcar/projetos/21dejunho.PNG" alt="">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    
+                                </div>
+                            </div>
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                    </div>
                     </div>
                 </div>
 
@@ -309,6 +331,23 @@
                     </div>
                 </div>
             </section>
+                
+                <!-- Swiper JS -->
+                <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+                
+                <!-- Initialize Swiper -->
+                <script>
+                    var swiper = new Swiper(".mySwiper", {
+                    navigation: {
+                        nextEl: ".swiper-button-next",
+                        prevEl: ".swiper-button-prev",
+                    },
+                    autoplay: {
+                        delay: 3000,
+                        disableOnInteraction: true,
+                    },
+                    });
+                </script>
         </main>
 
         <footer>

@@ -6,7 +6,7 @@
     --laranja-escuro: #f58634;
     --laranja-intermediario: #f9a132;
     --laranja-claro: #f2b448;
-    
+
     --branco-font: #fff;
 
     --color-neutral-0: #0e0c0c;
@@ -52,34 +52,44 @@ html {
     0% {
         transform: translate3d(0px, 0px, 0px);
     }
+
     10% {
         transform: translate3d(0px, 0px, 0px);
     }
-    20% {   
+
+    20% {
         transform: translate3d(-340px, 0px, 0px);
     }
-    30% {   
+
+    30% {
         transform: translate3d(-340px, 0px, 0px);
     }
+
     40% {
         transform: translate3d(-680px, 0px, 0px);
     }
-    50% {   
+
+    50% {
         transform: translate3d(-1020px, 0px, 0px);
     }
-    60% {   
+
+    60% {
         transform: translate3d(-1360px, 0px, 0px);
     }
-    70% {   
+
+    70% {
         transform: translate3d(-1700px, 0px, 0px);
     }
+
     80% {
         transform: translate3d(-2000px, 0px, 0px);
     }
+
     90% {
         transform: translate3d(-2000px, 0px, 0px);
     }
-    100% {   
+
+    100% {
         transform: translate3d(0px, 0px, 0px);
     }
 }
@@ -89,7 +99,7 @@ html {
     animation-name: autoplay-loop-animation !important;
     animation-iteration-count: infinite;
     animation-fill-mode: forwards;
-    transition: transform 0.3s ease; 
+    transition: transform 0.3s ease;
 }
 
 
@@ -114,7 +124,9 @@ header .logo .img-logo {
     font-size: 0px;
 }
 
-.text-green {color: #73ec04;}
+.text-green {
+    color: #73ec04;
+}
 
 nav .desktop-menu {
     display: flex;
@@ -179,7 +191,9 @@ nav .desktop-menu #item-menu-cursos .aba-cursos li a {
     color: #fff;
 }
 
-#current-page {color: #ffae4a;}
+#current-page {
+    color: #ffae4a;
+}
 
 nav .desktop-menu .item-menu:hover {
     transition: .3s;
@@ -268,11 +282,17 @@ div.carousel-inner {
     transform: scale(2.5);
 }
 
-.secao-galeria .carousel-control-next, .secao-galeria .carousel-control-prev {top: 0;}
+.secao-galeria .carousel-control-next, .secao-galeria .carousel-control-prev {
+    top: 0;
+}
 
-.carousel-control-next, .carousel-control-prev {top: 28%;}
+.carousel-control-next, .carousel-control-prev {
+    top: 28%;
+}
 
-#secao-cards {margin-top: 40px;}
+#secao-cards {
+    margin-top: 40px;
+}
 
 .box-cards {
     display: flex;
@@ -306,7 +326,9 @@ div.carousel-inner {
     background-color: var(--azul-claro);
 }
 
-#card-3 .card-item-top {background-color: rgb(55, 69, 163)}
+#card-3 .card-item-top {
+    background-color: rgb(55, 69, 163)
+}
 
 .card-item-top .img-card {
     position: absolute;
@@ -323,7 +345,9 @@ div.carousel-inner {
     transform: translateX(-50%);
 }
 
-.icone {font-size: 40px;}
+.icone {
+    font-size: 40px;
+}
 
 .img-card-item {
     width: 80%;
@@ -353,20 +377,34 @@ div.carousel-inner {
     text-align: left;
 }
 
-#card-1 {background-color: var(--azul-escuro)}
+#card-1 {
+    background-color: var(--azul-escuro)
+}
 
-#card-2 {background-color: var(--azul-intermediario);}
+#card-2 {
+    background-color: var(--azul-intermediario);
+}
 
-#card-3 {background-color: var(--azul-escuro);}
+#card-3 {
+    background-color: var(--azul-escuro);
+}
 
-#card-1 .img-card {border: 3px solid #44509e;}
+#card-1 .img-card {
+    border: 3px solid #44509e;
+}
 
-#card-2 .img-card {border: 3px solid var(--azul-claro);}
+#card-2 .img-card {
+    border: 3px solid var(--azul-claro);
+}
 
-#card-3 .img-card { border: 3px solid #44509e;}
+#card-3 .img-card {
+    border: 3px solid #44509e;
+}
 
 
-#secao-cursos {margin-top: 30px;}
+#secao-cursos {
+    margin-top: 30px;
+}
 
 .titulo-secao {
     font-weight: bolder;
@@ -539,10 +577,14 @@ div.carousel-inner {
     border-radius: 12px;
 }
 
+.informacoes-text:first-of-type {
+    background-color: var(--azul-claro);
+}
+
 .informacoes-text .box-paragrafo {
     width: 100%;
     display: flex;
-    height: 80%;
+    height: 100%;
 
     justify-content: center;
     align-items: center;
@@ -562,11 +604,11 @@ div.carousel-inner {
 .informacoes .logo-eixoglobal {
     display: flex;
     align-items: center;
-
     justify-content: center;
 }
+
 .informacoes .logo-eixoglobal img {
-    height: 360px ;
+    height: 360px;
 }
 
 .informacoes .btn-eixoglobal .btn {
@@ -597,7 +639,7 @@ div.carousel-inner {
 
 .informacoes .btn-eixoglobal .btn:hover {
     transition: 1s ease-in-out;
-    background: var(--laranja-intermediario) ;
+    background: var(--laranja-intermediario);
 }
 
 .informacoes .btn-eixoglobal .btn:hover svg {
@@ -610,130 +652,56 @@ div.carousel-inner {
     font-weight: 100;
 }
 
-section#secao-news{
-    margin:20px 0 50px;
-}
-
-.slide-container {
-    margin: 0 40px;
-}
-
-.card-wrapper:hover {
-    animation-play-state: paused;
-}
-
-
-.slide-container .card {
-    background-color: #fff;
-    border-radius: 8px;
-    position: relative;
-    overflow: hidden;
-    cursor: grab;
-    text-overflow: ellipsis;
-    width: auto !important;
-    margin-right: 40px !important;
-}
-
-.slide-container .card:last-of-type(1) {
-    border: 10px solid green;
-}
-
-.card a {
-    height: 300px;
-    width: 300px;
-}
-
-.card .image-news { 
-    position: relative;
-    overflow: hidden;
-    height: 300px;
-    width: 300px;
-}
-
-.slide-container .card .image-news img {
-    width: 100%;
-    height: auto ;
-    border-radius: 8px;
-    z-index: -1 ;
-    object-fit: cover;
-    /*  box-shadow: 2px 4px 9px #73ec04; */
-    transition: 0.5s;
-    transform: scale(1.02);
-}
-
-.slide-container .card .overlay-news {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+.swiper {
+    width: 85%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    opacity: 0;
-    transition: opacity .3s ease;
-    z-index: 10;
 }
 
-.slide-container .card:hover .overlay-news {opacity: 1;}
-
-.slide-container .card:hover .image-news img {transform: scale(1.2);}
-
-.slide-container .card .overlay-news-content {
-    left: 2%; 
-    color: #fff;
-    height: 100%;
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
     display: flex;
     justify-content: center;
-    flex-direction: column;
-    text-align: center;
+    align-items: center;
 }
 
-.slide-container .card .overlay-news-content .title-news {
-    font-size: 3rem;
-    text-transform: uppercase;
-    margin-bottom: 10px;
-    padding: 0 20px 0;
+.swiper-slide img {
+    display: block;
     width: 100%;
-    font-weight: bold;
-    font-family: 'Gilroy-extrabold', sans-serif;
+    height: 100%;
+    object-fit: cover;
 }
 
-.slide-container .card .overlay-news-content .text-news {
-    display: -webkit-box;
-    font-size: 2rem;
-    overflow: hidden;
-    padding: 0 20px ;
-    font-family: 'Gilroy', sans-serif;
+.swiper-slide {
+    width: 50%;
 }
 
-
-.swiper-pagination {
-    position: relative;
-    margin-top: 20px; 
- }
-
-.swiper-navBtn {
-    color: #000000;
-    height: 40px;
-    width: 40px;
-    background: #fff;
-    border-radius: 50%;
-    transition: 0.3s;
-    transform: translateY(120%)
+.swiper-button-next, .swiper-button-prev{
+    display: inline-block;
+    color: #00AFF0;
+    text-shadow: 0px 0px 10px #00AFF0;
+    transition: .4s;
 }
 
-.swiper-navBtn:hover {
-    color: #fff;
-    background: #F9A132;
-    border-radius: 50%;
-    transform: translateY(-50%), scale(1.23);
+.swiper-button-next:hover {
+    transform: scale(1.3);
 }
-    
-.swiper-navBtn::before,
-.swiper-navBtn::after {font-size: 18px;}
 
-.swiper-pagination-bullet {
-    background-color: #fff;
-    border: 3px solid #73ec04;
+.swiper-button-prev:hover{
+    transform: scale(1.3);
+}
+
+.card-eventos {
+    display: flex;
+    background-color: #00AFF0;
+    width: 350px;
+    height: 300px;
+    border-radius: 15px;
+}
+
+.card-eventos img {
+    border-radius: 15px;
 }
 
 
@@ -757,7 +725,7 @@ section#secao-news{
     background-position: center;
 }
 
-.overlay{
+.overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -843,23 +811,23 @@ span.texto-verde {
     cursor: pointer;
     border-radius: 20px;
     box-shadow: 2px 2px 15px var(--verde-intermediario);
-    animation: floating 2s ease-in-out infinite ;
+    animation: floating 2s ease-in-out infinite;
     z-index: 2;
     transition: all 0.7s;
 }
 
 .secao-maps a.btn-maps:hover {
-    background-color:#fff;
+    background-color: #fff;
 }
 
-.secao-maps a.btn-maps:hover  i{
+.secao-maps a.btn-maps:hover i {
     color: var(--verde-intermediario);
 }
 
 .secao-maps a.btn-maps i {
-    color: white ;
+    color: white;
     font-size: 35px;
-    text-align: center;    
+    text-align: center;
     transition: all 0.7s;
 }
 
@@ -1034,25 +1002,34 @@ main .secao-inicial {
 
 #eixo {
     background-image: url("../images/artigos-cursos/eixo.jpg");
-    background-position: 50% 0% !important; 
+    background-position: 50% 0% !important;
 }
 
-#infantil {background-image: url("../images/artigos-cursos/infantil-guia-2.JPG");}
+#infantil {
+    background-image: url("../images/artigos-cursos/infantil-guia-2.JPG");
+}
 
-#fundamental {background-image: url("../images/artigos-cursos/fudamental-guia.jfif");}
+#fundamental {
+    background-image: url("../images/artigos-cursos/fudamental-guia.jfif");
+}
 
-#medio {background-image: url("../images/artigos-cursos/medio-guia.jpg");}
+#medio {
+    background-image: url("../images/artigos-cursos/medio-guia.jpg");
+}
 
-#extracurricular {background-image: url("../images/artigos-cursos/extracurricular-guia.JPG");}
+#extracurricular {
+    background-image: url("../images/artigos-cursos/extracurricular-guia.JPG");
+}
 
-main {overflow: hidden ;}
+main {
+    overflow: hidden;
+}
 
-main .secao-inicial {width: 100vw !important;}
+main .secao-inicial {
+    width: 100vw !important;
+}
 
 main .secao-conteudo.container {
-    /* background-image: url(../images/secao-sobre/diocesano-eixoglobal.png);
-    background-position: 50% 10%;
-    background-repeat: no-repeat; */
     padding-top: 60px !important;
 }
 
@@ -1098,11 +1075,11 @@ main .secao-conteudo .article p.text-article {
     width: 100%;
 }
 
-main .secao-conteudo .table-turmas table  {
+main .secao-conteudo .table-turmas table {
     width: 90%;
-}   
+}
 
-main .secao-conteudo .table-turmas table tr th,td {
+main .secao-conteudo .table-turmas table tr th, td {
     border: 3px solid black;
     padding: 10px;
     font-size: 2rem;
@@ -1114,9 +1091,9 @@ main .secao-conteudo .table-turmas table th {
 }
 
 @media (max-width: 800px) {
-    main .secao-conteudo .table-turmas table  {
+    main .secao-conteudo .table-turmas table {
         width: 100%;
-    }  
+    }
 }
 
 main .secao-conteudo .article ul li {
@@ -1140,80 +1117,225 @@ main .secao-galeria {
 
 .secao-galeria .carousel-item {
     background-position: center center;
-    background-size: cover; 
-    background-repeat: no-repeat;   
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 500px;
     object-fit: cover;
     object-position: 50%;
 }
 
-#fotogaleria1  {background-image: url(../images/galeria/mae/diamae.jpg);}
-#fotogaleria2  {background-image: url(../images/galeria/mae/mae4.jpg);}
+#fotogaleria1 {
+    background-image: url(../images/galeria/mae/diamae.jpg);
+}
 
-#fotogaleria3  {background-image: url(../images/galeria/pai/diapai.JPG);}
-#fotogaleria4  {background-image: url(../images/galeria/pai/pai2.JPG);}
-#fotogaleria5  {background-image: url(../images/galeria/pai/pai3.JPG);}
-#fotogaleria6  {background-image: url(../images/galeria/pai/pai4.JPG);}
-#fotogaleria7  {background-image: url(../images/galeria/pai/pai5.JPG);}
+#fotogaleria2 {
+    background-image: url(../images/galeria/mae/mae4.jpg);
+}
 
-#fotogaleria8  {background-image: url(../images/galeria/hallowen/hallowen1.jpg);}
-#fotogaleria9  {background-image: url(../images/galeria/hallowen/hallowen2.jpg);}
-#fotogaleria10 {background-image: url(../images/galeria/hallowen/hallowen3.jpg);}
-#fotogaleria11 {background-image: url(../images/galeria/hallowen/hallowen4.jpg);}
+#fotogaleria3 {
+    background-image: url(../images/galeria/pai/diapai.JPG);
+}
 
-#fotogaleria12 {background-image: url(../images/galeria/kidsnight/kidsnight.JPG);}
-#fotogaleria13 {background-image: url(../images/galeria/kidsnight/kidsnight\ \(1\).JPG);}
-#fotogaleria14 {background-image: url(../images/galeria/kidsnight/kidsnight\ \(2\).JPG);}
-#fotogaleria15 {background-image: url(../images/galeria/kidsnight/kidsnight\ \(3\).JPG);}
-#fotogaleria16 {background-image: url(../images/galeria/kidsnight/kidsnight\ \(4\).JPG);}
+#fotogaleria4 {
+    background-image: url(../images/galeria/pai/pai2.JPG);
+}
 
-#fotogaleria17 {background-image: url(../images/galeria/jogos/jogos\ \(1\).jpg);}
-#fotogaleria18 {background-image: url(../images/galeria/jogos/jogos\ \(2\).jpg);}
-#fotogaleria19 {background-image: url(../images/galeria/jogos/jogos\ \(3\).jpg);}
-#fotogaleria20 {background-image: url(../images/galeria/jogos/jogos\ \(4\).jpg);}
-#fotogaleria21 {background-image: url(../images/galeria/jogos/jogos\ \(5\).jpg);}
-#fotogaleria22 {background-image: url(../images/galeria/jogos/jogos\ \(6\).jpg);}
-#fotogaleria23 {background-image: url(../images/galeria/jogos/jogos\ \(7\).jpg);}
+#fotogaleria5 {
+    background-image: url(../images/galeria/pai/pai3.JPG);
+}
 
-#fotogaleria24 {background-image: url(../images/galeria/paixaocristo/paixaodecristo\ \(1\).jpg);}
-#fotogaleria25 {background-image: url(../images/galeria/paixaocristo/paixaodecristo\ \(2\).jpg);}
-#fotogaleria26 {background-image: url(../images/galeria/paixaocristo/paixaodecristo\ \(3\).jpg);}
-#fotogaleria27 {background-image: url(../images/galeria/paixaocristo/paixaodecristo\ \(4\).jpg);}
-#fotogaleria28 {background-image: url(../images/galeria/paixaocristo/paixaodecristo\ \(5\).jpg);}
-#fotogaleria29 {background-image: url(../images/galeria/paixaocristo/paixaodecristo\ \(6\).jpg);}
-#fotogaleria30 {background-image: url(../images/galeria/paixaocristo/paixaodecristo\ \(7\).jpg);}
+#fotogaleria6 {
+    background-image: url(../images/galeria/pai/pai4.JPG);
+}
 
-#fotogaleria31 {background-image: url(../images/galeria/saojoao/saojoao\ \(1\).jpg);}
-#fotogaleria32 {background-image: url(../images/galeria/saojoao/saojoao\ \(2\).jpg);}
-#fotogaleria33 {background-image: url(../images/galeria/saojoao/saojoao\ \(3\).jpg);}
-#fotogaleria34 {background-image: url(../images/galeria/saojoao/saojoao\ \(4\).jpg);}
-#fotogaleria35 {background-image: url(../images/galeria/saojoao/saojoao\ \(5\).jpg);}
+#fotogaleria7 {
+    background-image: url(../images/galeria/pai/pai5.JPG);
+}
 
-#fotogaleria36 {background-image: url(../images/galeria/jogos/jogos\ \(8\).jpg);}
-#fotogaleria37 {background-image: url(../images/galeria/jogos/jogos\ \(9\).jpg);}
-#fotogaleria38 {background-image: url(../images/galeria/jogos/jogos\ \(10\).jpg);}
-#fotogaleria39 {background-image: url(../images/galeria/jogos/jogos\ \(11\).jpg);}
-#fotogaleria40 {background-image: url(../images/galeria/jogos/jogos\ \(12\).jpg);}
+#fotogaleria8 {
+    background-image: url(../images/galeria/hallowen/hallowen1.jpg);
+}
 
-#fotogaleria41 {background-image: url(../images/galeria/saojoao/saojoao\ \(11\).jpg);}
-#fotogaleria42 {background-image: url(../images/galeria/saojoao/saojoao\ \(12\).jpg);}
-#fotogaleria43 {background-image: url(../images/galeria/saojoao/saojoao\ \(13\).jpg);}
-#fotogaleria44 {background-image: url(../images/galeria/saojoao/saojoao\ \(14\).jpg);}
-#fotogaleria45 {background-image: url(../images/galeria/saojoao/saojoao\ \(15\).jpg);}
+#fotogaleria9 {
+    background-image: url(../images/galeria/hallowen/hallowen2.jpg);
+}
 
-#fotogaleria46 {background-image: url(../images/galeria/paixaocristo/paixaodecristo\ \(8\).jpg);}
-#fotogaleria47 {background-image: url(../images/galeria/paixaocristo/paixaodecristo\ \(9\).jpg);}
-#fotogaleria48 {background-image: url(../images/galeria/paixaocristo/paixaodecristo\ \(10\).jpg);}
-#fotogaleria49 {background-image: url(../images/galeria/paixaocristo/paixaodecristo\ \(11\).jpg);}
-#fotogaleria50 {background-image: url(../images/galeria/paixaocristo/paixaodecristo\ \(12\).jpg);}
+#fotogaleria10 {
+    background-image: url(../images/galeria/hallowen/hallowen3.jpg);
+}
 
-#fotogaleria51 {background-image: url(../images/galeria/mae/mae\ \(1\).jpg);}
-#fotogaleria52 {background-image: url(../images/galeria/mae/mae\ \(2\).jpg);}
+#fotogaleria11 {
+    background-image: url(../images/galeria/hallowen/hallowen4.jpg);
+}
+
+#fotogaleria12 {
+    background-image: url(../images/galeria/kidsnight/kidsnight.JPG);
+}
+
+#fotogaleria13 {
+    background-image: url(../images/galeria/kidsnight/kidsnight\ \(1\).JPG);
+}
+
+#fotogaleria14 {
+    background-image: url(../images/galeria/kidsnight/kidsnight\ \(2\).JPG);
+}
+
+#fotogaleria15 {
+    background-image: url(../images/galeria/kidsnight/kidsnight\ \(3\).JPG);
+}
+
+#fotogaleria16 {
+    background-image: url(../images/galeria/kidsnight/kidsnight\ \(4\).JPG);
+}
+
+#fotogaleria17 {
+    background-image: url(../images/galeria/jogos/jogos\ \(1\).jpg);
+}
+
+#fotogaleria18 {
+    background-image: url(../images/galeria/jogos/jogos\ \(2\).jpg);
+}
+
+#fotogaleria19 {
+    background-image: url(../images/galeria/jogos/jogos\ \(3\).jpg);
+}
+
+#fotogaleria20 {
+    background-image: url(../images/galeria/jogos/jogos\ \(4\).jpg);
+}
+
+#fotogaleria21 {
+    background-image: url(../images/galeria/jogos/jogos\ \(5\).jpg);
+}
+
+#fotogaleria22 {
+    background-image: url(../images/galeria/jogos/jogos\ \(6\).jpg);
+}
+
+#fotogaleria23 {
+    background-image: url(../images/galeria/jogos/jogos\ \(7\).jpg);
+}
+
+#fotogaleria24 {
+    background-image: url(../images/galeria/paixaocristo/paixaodecristo\ \(1\).jpg);
+}
+
+#fotogaleria25 {
+    background-image: url(../images/galeria/paixaocristo/paixaodecristo\ \(2\).jpg);
+}
+
+#fotogaleria26 {
+    background-image: url(../images/galeria/paixaocristo/paixaodecristo\ \(3\).jpg);
+}
+
+#fotogaleria27 {
+    background-image: url(../images/galeria/paixaocristo/paixaodecristo\ \(4\).jpg);
+}
+
+#fotogaleria28 {
+    background-image: url(../images/galeria/paixaocristo/paixaodecristo\ \(5\).jpg);
+}
+
+#fotogaleria29 {
+    background-image: url(../images/galeria/paixaocristo/paixaodecristo\ \(6\).jpg);
+}
+
+#fotogaleria30 {
+    background-image: url(../images/galeria/paixaocristo/paixaodecristo\ \(7\).jpg);
+}
+
+#fotogaleria31 {
+    background-image: url(../images/galeria/saojoao/saojoao\ \(1\).jpg);
+}
+
+#fotogaleria32 {
+    background-image: url(../images/galeria/saojoao/saojoao\ \(2\).jpg);
+}
+
+#fotogaleria33 {
+    background-image: url(../images/galeria/saojoao/saojoao\ \(3\).jpg);
+}
+
+#fotogaleria34 {
+    background-image: url(../images/galeria/saojoao/saojoao\ \(4\).jpg);
+}
+
+#fotogaleria35 {
+    background-image: url(../images/galeria/saojoao/saojoao\ \(5\).jpg);
+}
+
+#fotogaleria36 {
+    background-image: url(../images/galeria/jogos/jogos\ \(8\).jpg);
+}
+
+#fotogaleria37 {
+    background-image: url(../images/galeria/jogos/jogos\ \(9\).jpg);
+}
+
+#fotogaleria38 {
+    background-image: url(../images/galeria/jogos/jogos\ \(10\).jpg);
+}
+
+#fotogaleria39 {
+    background-image: url(../images/galeria/jogos/jogos\ \(11\).jpg);
+}
+
+#fotogaleria40 {
+    background-image: url(../images/galeria/jogos/jogos\ \(12\).jpg);
+}
+
+#fotogaleria41 {
+    background-image: url(../images/galeria/saojoao/saojoao\ \(11\).jpg);
+}
+
+#fotogaleria42 {
+    background-image: url(../images/galeria/saojoao/saojoao\ \(12\).jpg);
+}
+
+#fotogaleria43 {
+    background-image: url(../images/galeria/saojoao/saojoao\ \(13\).jpg);
+}
+
+#fotogaleria44 {
+    background-image: url(../images/galeria/saojoao/saojoao\ \(14\).jpg);
+}
+
+#fotogaleria45 {
+    background-image: url(../images/galeria/saojoao/saojoao\ \(15\).jpg);
+}
+
+#fotogaleria46 {
+    background-image: url(../images/galeria/paixaocristo/paixaodecristo\ \(8\).jpg);
+}
+
+#fotogaleria47 {
+    background-image: url(../images/galeria/paixaocristo/paixaodecristo\ \(9\).jpg);
+}
+
+#fotogaleria48 {
+    background-image: url(../images/galeria/paixaocristo/paixaodecristo\ \(10\).jpg);
+}
+
+#fotogaleria49 {
+    background-image: url(../images/galeria/paixaocristo/paixaodecristo\ \(11\).jpg);
+}
+
+#fotogaleria50 {
+    background-image: url(../images/galeria/paixaocristo/paixaodecristo\ \(12\).jpg);
+}
+
+#fotogaleria51 {
+    background-image: url(../images/galeria/mae/mae\ \(1\).jpg);
+}
+
+#fotogaleria52 {
+    background-image: url(../images/galeria/mae/mae\ \(2\).jpg);
+}
 
 .box-galeria {
     width: 100%;
     display: flex;
-    align-items: center;   
+    align-items: center;
     justify-content: center;
 }
 
@@ -1221,11 +1343,11 @@ main .secao-galeria {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     grid-gap: 30px;
-    overflow-x: hidden; 
-    overflow-y: hidden;  
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
-.galeria .miniatura{
+.galeria .miniatura {
     width: 100%;
     border-radius: 10px;
     transition: 0.2s;
@@ -1234,4 +1356,3 @@ main .secao-galeria {
 .galeria .miniatura:hover {
     box-shadow: 0px 0px 30px var(--verde-intermediario);
 }
-
